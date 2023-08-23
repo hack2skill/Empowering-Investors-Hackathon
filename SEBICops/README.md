@@ -1,7 +1,5 @@
 # Empowering-Investors-Hackathon
 
-## README.md must consist of the following information:
-
 #### Team Name - SEBICops
 #### Problem Statement - Identifying Misleading Claims
 #### Team Leader Email - mayur_madnani@intuit.com
