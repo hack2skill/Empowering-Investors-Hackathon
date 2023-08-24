@@ -14,7 +14,7 @@ A Brief of the Prototype:
 6) Generates top cryptocurrency recommendations based on user preferences.
 7) Seamlessly integrates Flask web app with data science techniques.
 
-"I've uploaded the use case diagram to Google Drive. You can access it using the following link: https://drive.google.com/file/d/1sQr4KjeMM9vcMDEVneQBlYnkJXMxmm7B/view?usp=sharing  . Please let me know if you have any questions or need further information.https://drive.google.com/file/d/1sQr4KjeMM9vcMDEVneQBlYnkJXMxmm7B/view?usp=sharing
+"I've uploaded the use case diagram to Google Drive. You can access it using the following link: https://drive.google.com/file/d/1sQr4KjeMM9vcMDEVneQBlYnkJXMxmm7B/view?usp=sharing  . Please let me know if you have any questions or need further information.
 
 Tech Stack:
 1) Backend: Python with Flask framework
