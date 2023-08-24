@@ -17,7 +17,7 @@ Please check the submitted video. Thanks!!!
   This section must include UML Diagrams and prototype description
   
 ## Tech Stack: 
-   Python - ML Models
+   Python - ML Models, Gen AI
    Django Framework
    HTML CSS JS JQUERY
    SQLite3
