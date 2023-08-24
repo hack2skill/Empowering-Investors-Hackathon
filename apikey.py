@@ -1,4 +1,4 @@
-apikey = "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" #Bobby key
+apikey = "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" #Bobby key
 
 '''NOTE:
 This is the API key for the OpenAI API. It is a secret key and should not be shared with anyone.
