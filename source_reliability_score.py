@@ -51,7 +51,7 @@ def add_details_source(source_name,source_type,response):
     #Define the data for the new row
     new_row_data = [str(time_stamp),source_name,source_type,response,score]
     worksheet.append_row(new_row_data)
-    st.success("Row appended")
+    # st.success("Row appended")
 
     
 

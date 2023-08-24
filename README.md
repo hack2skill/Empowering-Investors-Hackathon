@@ -42,7 +42,7 @@
       4. PyTesseract - for Optical Character Recognition\
       5. pydub - for audio segmentation\
       6. moviePy - for detaching audio from video\
-      7. GoogleSheets - for backend database\
+      7. GoogleSheets - for backend database
    
 ## Step-by-Step Code Execution Instructions:
   1. clone the repository:
@@ -51,8 +51,9 @@
         ```
         
   2. **IMPORTANT**:
-        -> Go to '.streamlit/secrets.toml'
-        -> Enter your OpenAI api key in 'openai_apikey' variable
+
+        -> Go to '.streamlit/secrets.toml' \
+        -> Enter your OpenAI api key in 'openai_apikey' variable \
         -> save and exit
   3. Open a new python terminal
   4. Run the command:
@@ -63,4 +64,9 @@
 
   
 ## What I Learned:
-   Write about the biggest learning you had while developing the prototype
+   I learned about what problems are faced in real world by common people, money is the neccessity of human being, and a person invests his/her money in order to get positive returns so that they can make their living better.
+   And we as contributors can help them achieve the goal.\
+   I faced many challenges while developing the prototype, especially connecting with the database and APIs, but in the end when I see the application of this project in real world, I feel great motivation to develop a fully functional solution.
+
+   Thank you for this opportunity!
+
