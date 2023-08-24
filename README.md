@@ -46,6 +46,20 @@
    
 ## Step-by-Step Code Execution Instructions:
   1. clone the repository:
+        ```
+        git clone https://github.com/hindesh-akash/Empowering-Investors-Hackathon.git
+        ```
+        
+  2. **IMPORTANT**:
+        -> Go to '.streamlit/secrets.toml'
+        -> Enter your OpenAI api key in 'openai_apikey' variable
+        -> save and exit
+  3. Open a new python terminal
+  4. Run the command:
+      ```
+      streamlit run 01_homepage.py
+      ```
+  5. Explore the app
 
   
 ## What I Learned:
