@@ -9,10 +9,7 @@
 <br>
 
 ## A Brief of the Prototype: 
-
-<h5>The Demo Video</h5>
-<video src = "https://drive.google.com/file/d/19XEfTAJg9SRasPMAOhiWdkwGQsiUGfsf/view?usp=sharing" width=180 />
-
+Demo Video : https://drive.google.com/file/d/19XEfTAJg9SRasPMAOhiWdkwGQsiUGfsf/view?usp=sharing
 The Prototype is disected into 3 parts
 #### 1.Landing UI: Users are prompted to provide links to YouTube videos or YouTube shorts to initiate the process. In doing so, users gain access to the concurrently generated transcription also.
 <img width="550" height="330" alt="End2End" src="https://github.com/KGSSV/SEBI/blob/main/assets/MicrosoftTeams-image%20(11).png">
