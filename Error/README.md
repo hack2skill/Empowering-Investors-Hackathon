@@ -6,7 +6,7 @@
 
 ## A Brief of the Prototype:
 
-![INVEST-UML Diagram](https://drive.google.com/file/d/1mqsWTJtNvJc1Im6i2b_WlNRzBN42ch6T/view?usp=drive_link)
+Link of UML - https://drive.google.com/file/d/1mqsWTJtNvJc1Im6i2b_WlNRzBN42ch6T/view?usp=drive_link
 
 The project, named I.N.V.E.S.T. (Intelligent Network for Vital Education in Strategic Trading), addresses the issue of Content Curation and Education. The primary aim is to develop an AI bot for SEBI (Securities and Exchange Board of India) that offers valuable assistance to individuals in the field of finance. This bot consists of features like including personalized book recommendations and course suggestions for users to enhance their knowledge.
 Moreover, the bot offers a comprehensive understanding of finance-related general knowledge and terminology. It's designed to curate and deliver the latest news regarding Initial Public Offerings (IPOs). In essence, I.N.V.E.S.T. aims to create an intelligent AI tool that empowers users with education, insights, and real-time market information for strategic trading.
