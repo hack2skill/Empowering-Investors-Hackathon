@@ -15,7 +15,6 @@ import redis
 import os
 import json
 os.environ["OPEN_API_KEY"] = "J3dWgPvniwfXTWCOry2yT3BlbkFJkGxhfh9GYeXK1IL0ZEj0"
-#r = redis.StrictRedis(host='10.0.0.105', port=6379, db=0)
 
 llm = OpenAI(openai_api_key="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",temperature=0)
 
@@ -86,9 +85,6 @@ def driver(tickers):
         json_summary = getJSON(summary,index)
         print('Converted to JSON')
         print(json_summary)
-
-        # #-------- Save the file path to redis  -----------#
-        # r.set('earnings_summary_{}'.format(ticker), json.dumps(json_summary)) 
 
 tickers = [t[:-4] for t in os.listdir('Documents')]
 driver(tickers)
