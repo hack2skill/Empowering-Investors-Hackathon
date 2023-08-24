@@ -2,5 +2,5 @@ env
 Utilities/translate/a.bin
 Utilities/Wav_To_Text/__pycache__/
 Utilities/Yt_To_Wav/__pycache__/
-
+Utilities/Embeddings_Generate/__pycache__
 output.wav
