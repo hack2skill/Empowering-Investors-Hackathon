@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-satoshi: Satoshi;
+  --font-poppins: Poppins;
+  --font-lexend: Lexend;
+  --font-space-grotesk: "Space Grotesk";
+  --font-inter: Inter;
+  --font-inherit: inherit;
+
+  /* font sizes */
+  --font-size-sm: 0.88rem;
+  --font-size-xs: 0.75rem;
+  --font-size-lg: 1.13rem;
+  --font-size-smi: 0.81rem;
+  --font-size-2xs-5: 0.66rem;
+  --font-size-base: 1rem;
+  --font-size-sm-6: 0.85rem;
+  --font-size-3xl: 1.38rem;
+  --font-size-3xl-4: 1.4rem;
+  --font-size-3xs: 0.63rem;
+  --font-size-7xs: 0.38rem;
+  --font-size-4xs: 0.56rem;
+  --font-size-mini: 0.94rem;
+  --font-size-5xl: 1.5rem;
+  --font-size-4xl-2: 1.45rem;
+  --font-size-9xl: 1.75rem;
+  --font-size-sm-2: 0.83rem;
+  --font-size-5xs-4: 0.46rem;
+
+  /* Colors */
+  --color-gray-100: #fbfdfd;
+  --color-gray-200: #fcfbfc;
+  --color-gray-300: #939199;
+  --color-gray-400: #282a30;
+  --color-gray-500: #1c1b1f;
+  --color-mediumslateblue: #1d56ff;
+  --color-white: #fff;
+  --color-darkslategray-100: #454545;
+  --color-darkslategray-200: #424242;
+  --color-darkslategray-300: #414141;
+  --color-darkslategray-400: #3c4149;
+  --color-darkgray-100: #a6a6a6;
+  --color-darkgray-200: #9ca1ab;
+  --color-darkgray-300: #a19ea4;
+  --color-darkgray-400: #969696;
+  --color-navajowhite: #ffd5a0;
+  --color-paleturquoise: #a0f4ff;
+  --color-plum: #caa0ff;
+  --color-lightcoral: #ffa0a0;
+  --color-aliceblue: #f1f5ff;
+  --color-whitesmoke-100: #f8f8f8;
+  --color-whitesmoke-200: #f8f5f5;
+  --color-whitesmoke-300: #eee;
+  --color-red: #ff2626;
+  --color-dimgray: #736262;
+  --color-lightgray: #d4d4d4;
+  --color-crimson: #fc3873;
+  --color-salmon-100: #ff7d7d;
+  --color-salmon-200: #ed6b60;
+  --color-black: #000;
+  --color-gainsboro: #dfe1e4;
+  --gray-500: #667085;
+  --color-forestgreen: #2b963a;
+  --color-lavenderblush: #ffebf1;
+  --color-tomato-100: #ff5546;
+  --color-tomato-200: #fa4e3f;
+  --color-lightgreen: #63c258;
+
+  /* Gaps */
+  --gap-8xs: 0.31rem;
+  --gap-3xs: 0.63rem;
+  --gap-xl: 1.25rem;
+  --gap-mini: 0.94rem;
+  --gap-lg: 1.13rem;
+  --gap-2xs: 0.69rem;
+  --gap-76xl: 5.94rem;
+  --gap-81xl: 6.25rem;
+  --gap-79xl: 6.13rem;
+  --gap-5xs-9: 0.49rem;
+  --gap-7xs: 0.38rem;
+  --gap-base: 1rem;
+  --gap-xs: 0.75rem;
+  --gap-5xs: 0.5rem;
+  --gap-12xs-5: 0.03rem;
+  --gap-17xl: 2.25rem;
+  --gap-29xl: 3rem;
+  --gap-11xs: 0.13rem;
+  --gap-9xl: 1.75rem;
+
+  /* Paddings */
+  --padding-3xs: 0.63rem;
+  --padding-lg: 1.13rem;
+  --padding-xs: 0.75rem;
+  --padding-26xl: 2.81rem;
+  --padding-sm: 0.88rem;
+  --padding-23xl: 2.63rem;
+  --padding-2xs-6: 0.66rem;
+  --padding-sm-2: 0.83rem;
+  --padding-4xs: 0.56rem;
+  --padding-mini: 0.94rem;
+  --padding-9xs: 0.25rem;
+  --padding-5xs: 0.5rem;
+  --padding-base: 1rem;
+  --padding-smi: 0.81rem;
+  --padding-5xs-8: 0.49rem;
+  --padding-10xs: 0.19rem;
+  --padding-8xs: 0.31rem;
+  --padding-7xs: 0.38rem;
+  --padding-5xl: 1.5rem;
+
+  /* border radiuses */
+  --br-5xs: 8px;
+  --br-6xs: 7px;
+  --br-xs: 12px;
+  --br-36xl-6: 55.6px;
+  --br-11xl: 30px;
+  --br-mini: 15px;
+  --br-9xl: 28px;
+  --br-3xs: 10px;
+  --br-22xl-6: 41.6px;
+  --br-16xl-7: 35.7px;
+  --br-mid: 17px;
+  --br-mid-7: 17.7px;
+  --br-11xl-2: 30.2px;
+  --br-18xl: 37px;
+  --br-4xs: 9px;
+  --br-4xl: 23px;
+  --br-9xs: 4px;
+
+  /* Effects */
+  --white-card: 0px 13px 94px rgba(0, 0, 0, 0.06);
+  --card: 0px 4px 24px rgba(0, 0, 0, 0.06);
+}
