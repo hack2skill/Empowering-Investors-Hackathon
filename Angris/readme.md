@@ -31,6 +31,7 @@
 
    
 ## What we Learned:
+   - BUILDING RELIABLE GPT APPLICATION IS HARD, WHAT'S HARDER IS BUILDING ONE WHERE THE PROGRAMMING LOGIC IS CONTROLLED BY GPT IS HARDER 
    - Chain of thought prompting techniques
    - Integrating responses from different GenAI models  
    - Building an end to end pipeline for video generation from fundamentals
