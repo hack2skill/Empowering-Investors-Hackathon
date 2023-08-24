@@ -16,6 +16,10 @@ udaybeswal@gmail.com
 
 This project prototype addresses the issue of misleading claims made by influencers, particularly in the financial domain.
 
+### Final Software UML
+
+![UML](image.png)
+
 ### Prototype Overview
 Prototype currently contains a Front-End made using `Streamlit`.The frontend takes a youtube url and the name of the influencer(just for demonstartion purpose) as the input and upon pressing the check button a multi-stage pipeline is triggered. Along with the pipeline a seperate check is run to check if an influencer is registered under SEBI or not. Since no such data was available publicly we are using a custom csv file. 
 
