@@ -12,6 +12,7 @@
 #### Team Name - Emperor
 #### Problem Statement - Misleading Claim Detection & Content Curation
 #### Team Leader Email - hindeshnit19@gmail.com
+#### Project Demo Link: <https://www.youtube.com/watch?v=jNVTSDwTm14>
 
 ## A Brief of the Prototype:
   ![use_case](use_case.png)

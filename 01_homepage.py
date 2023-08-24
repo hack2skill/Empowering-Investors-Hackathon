@@ -17,4 +17,4 @@ st.markdown("<h3 style='text-align: left; color: black;'><hr> About this project
 
 st.sidebar.success("Select a page above!")
 
-st_player("https://www.youtube.com/watch?v=csnD5EVL5z8")
+st_player("https://www.youtube.com/watch?v=jNVTSDwTm14")
