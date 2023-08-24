@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualizations</title>
+</head>
+<body>
+    <h1>Available Visualizations</h1>
+    <ul>
+        <li><a href="{{ url_for('visualize_credential_bar') }}">Credibility Score Distribution</a></li>
+        <li><a href="{{ url_for('visualize_claim_pie') }}">Claim Categories</a></li>
+        <li><a href="{{ url_for('visualize_keyword_bar') }}">Keyword Frequency </a></li>
+        <li><a href="{{ url_for('visualize_scatter_credential_keywords') }}">Credibility vs. Keywords</a></li>
+        <!-- Add links for other visualizations -->
+    </ul>
+    <a href="{{ url_for('index') }}">Back to Dashboard</a>
+</body>
+</html>

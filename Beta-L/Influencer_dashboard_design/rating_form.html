@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rating</title>
+</head>
+<body>
+    <h1>Rate Influencer: {{ influencer.Name }}</h1>
+    <form method="POST">
+        <label for="rating">Rating (1-5):</label><br>
+        <input type="number" id="rating" name="rating" min="1" max="5"><br>
+        <button type="submit">Submit Rating</button>
+    </form>
+
+    <div>
+        <h2>Previous Ratings:</h2>
+        <ul>
+            {% for rating in previous_ratings %}
+            <li>{{ rating }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</body>
+</html>

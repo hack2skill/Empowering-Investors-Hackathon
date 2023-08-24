@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+    <style>
+        /* Custom CSS for styling the profile page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ff6a00; /* Fallback background color */
+            background-image: linear-gradient(to bottom, #f5f5f5, #e0e0e0); /* Gradient background */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: burlywood;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+            .profile h2 {
+                color: rgb(0, 0, 0);
+            }
+
+        .feedback-form, .rating-form {
+            padding: 20px;
+            background-color: #eeeadd;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .previous-feedback, .previous-ratings {
+            padding: 20px;
+            background-color: #eef0f3;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .flagged {
+            color: red;
+            font-weight: bold;
+        }
+
+        .flag-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+            .flag-button.flagged {
+                background-color: red;
+            }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <h2>Name: {{ influencer.Name }}</h2>
+            <br />
+            <p><strong>Credibility Score: </strong>  {{ influencer['Credibility_Score'] }}</p>
+            <br />
+            <p><strong>Explanation:</strong> {{ influencer.Explanation }}</p>
+            <br />
+            <p><strong>Claim:</strong> {{ influencer.Claim }}</p>
+            <br />
+            <p><strong>Keywords:</strong> {{ influencer.Keywords }}</p>
+            <br/>
+            <p><strong>Rating:</strong> {{ influencer.Rating }}</p>
+            <br/>
+            <!-- New information -->
+            <!-- New information -->
+            <p>
+                <strong>Social Network Links:</strong>
+                {% if influencer['Social_Network_Links'] %}
+                <ul>
+                    {% for link in influencer['Social_Network_Links'].split(',') %}
+                    <li> <a href="{{ link }}">{{ link }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                No social network links available.
+                {% endif %}
+            </p>
+
+            <br/>
+
+            <p>
+                <strong>Recent Post Links:</strong>
+                {% if influencer['Recent_Post_Links'] %}
+                <ul>
+                    {% for link in influencer['Recent_Post_Links'].split(',') %}
+                    <li> <a href="{{ link }}">{{ link }}</a> </li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                No recent post links available.
+                {% endif %}
+            </p>
+        </div>
+
+        <ul>
+            <h3>click here to flag a misleading claim :</h3>
+            {% for claim in influencer.Claim.split(', ') %}
+            <li>
+                {{ claim }}
+                <button class="flag-button" data-influencer="{{ influencer.Name }}" data-claim="{{ claim }}">Flag</button>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <!-- Feedback form -->
+        <div class="feedback-form">
+            <h3>Provide Feedback:</h3>
+            <form method="POST" action="{{ url_for('feedback' , influencer_name=influencer.Name) }}">
+                <label for="feedback">Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+
+        <!-- Display previous feedback -->
+        <div class="previous-feedback">
+            <h3>Previous Feedback:</h3>
+            <ul>
+                {% for feedback_entry in previous_feedback %}
+                <li>{{ feedback_entry }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- Rating form -->
+        <div class="rating-form">
+            <h3>Rate Influencer:</h3>
+            <form method="POST" action="{{ url_for('rate', influencer_name=influencer.Name) }}">
+                <label for="rating">Rating (1-5):</label><br>
+                <input type="number" id="rating" name="rating" min="1" max="5"><br>
+                <button type="submit">Submit Rating</button>
+            </form>
+        </div>
+
+        <!-- Display previous ratings -->
+        <div class="previous-ratings">
+            <h3>Previous Ratings:</h3>
+            <ul>
+                {% for rating in previous_ratings %}
+                <li>{{ rating }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const flagButtons = document.querySelectorAll(".flag-button");
+
+            flagButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const influencer = this.getAttribute("data-influencer");
+                    const claim = this.getAttribute("data-claim");
+                    const button = this;
+
+                    // Toggle the flagged class
+                    button.classList.toggle("flagged");
+
+                    // Send an AJAX request to flag the claim
+                    fetch(`/flag_claim/${influencer}/${claim}`, { method: "POST" })
+                        .then(response => {
+                            if (!response.ok) {
+                                // Handle error
+                                console.error("Failed to flag claim:", response.statusText);
+                                button.classList.remove("flagged"); // Revert the change
+                            }
+                        })
+                        .catch(error => {
+                            console.error("An error occurred:", error);
+                            button.classList.remove("flagged"); // Revert the change
+                        });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

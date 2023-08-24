@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+</head>
+<body>
+    <h1>Feedback for Influencer: {{ influencer.Name }}</h1>
+    <form method="POST">
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+    <div>
+        <h2>Previous Feedback:</h2>
+        <ul>
+            {% for feedback_entry in previous_feedback %}
+            <li>{{ feedback_entry }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</body>
+</html>
