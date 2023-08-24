@@ -1,0 +1,288 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #4cff00;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.action-links {
+    padding-top: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+    .action-links a {
+        margin-right: 10px;
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+        .action-links a:hover {
+            color: #217dbb;
+        }
+
+.visualize-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.visualize-links li {
+    margin-bottom: 10px;
+}
+
+.visualize-links a {
+    color: #ff6a00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+    .visualize-links a:hover {
+        color: #217dbb;
+    }
+
+/* Apply Filters Form */
+form {
+    margin-bottom: 20px;
+}
+
+    form label {
+        margin-right: 10px;
+    }
+
+/* Apply Filters Button */
+button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+  q  button[type="submit"]:hover {
+        background-color: #217dbb;
+    }
+
+/* Dashboard Styling */
+.dashboard-header {
+    background-color: #0094ff;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.dashboard-content {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+    .dashboard-content h2 {
+        margin-bottom: 10px;
+    }
+
+/* Card UI styles */
+.main {
+    margin: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 20px;
+    
+}
+
+.card {
+    width: calc(30.33% - 20px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-right: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+*.image img{
+    height: 170px;
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+} 
+
+.title {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+}
+
+.scores {
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+    margin-top: 5px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.des {
+    text-align: center;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #555;
+    }
+
+
+/* Style for the search bar container */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the filter dropdown container */
+.filter-dropdown {
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Style for the filter button */
+.filter-btn {
+    color: #000
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the filter options */
+.filter-options {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    top: 30px;
+    left: 0;
+    width: 100px;
+    z-index: 1;
+}
+
+    /* Style for the filter options links */
+    .filter-options a {
+        display: block;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #333;
+        transition: background-color 0.3s;
+    }
+
+        .filter-options a:hover {
+            background-color: #f5f5f5;
+        }
+
+/* Show filter options when the filter button is clicked */
+.filter-dropdown:hover .filter-options {
+
+    display: block;
+}
+
+/* Style for the search input */
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Style for the search button */
+.search-btn {
+    background-color: #3498db;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .search-btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .search-btn:hover {
+        background-color: #217dbb;
+    }
+
+.flagged {
+    background-color: red;
+}
+
+/* Add this in your styles.css */
+.compare-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}

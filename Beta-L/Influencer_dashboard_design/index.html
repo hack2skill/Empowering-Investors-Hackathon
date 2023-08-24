@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Influencer Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="dashboard-header">
+        <h1>Influencer Dashboard</h1>
+    </div>
+
+    <div class="dashboard-content">
+        <h2>Get insights from Visualizations:</h2>
+        <ul class="visualize-links">
+            <li><a href="{{ url_for('visualize_credential_bar') }}">Credibility Score Distribution</a></li>
+            <li><a href="{{ url_for('visualize_claim_pie') }}">Claim Categories</a></li>
+            <li><a href="{{ url_for('visualize_keyword_bar') }}">Keyword Frequency</a></li>
+            <li><a href="{{ url_for('visualize_scatter_credential_keywords') }}">Credibility vs. Keywords</a></li>
+            <!-- Add links for other visualizations -->
+        </ul>
+
+        <form action="{{ url_for('compare') }}" method="GET">
+            <button type="submit" class="compare-button">Compare Influencers</button>
+        </form>
+
+    </div>
+    <form action="{{ url_for('index') }}" method="GET">
+        <div class="search-bar">
+            <div class="filter-dropdown">
+                <button class="filter-btn">Filter</button>
+                <div class="filter-options">
+                    <select name="filter" id="filter-select">
+                        <option value="claims">Claims</option>
+                        <option value="influencers">Influencers</option>
+                        <option value="keywords">Keywords</option>
+                        <option value="both">ALL</option>
+                    </select>
+                </div>
+            </div>
+            <input type="text" class="search-input" name="keywords" placeholder="Search keywords...">
+            <button type="submit" class="search-btn">
+                <img src="https://th.bing.com/th/id/R.5c74f261278bd23dcd88c3ea4ce12c4d?rik=B76RqcIKqz1hjA&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2faTe%2f64j%2faTe64jRT4.png&ehk=OO6eXUsmOM8Y3Tg9djHsP4VTdKEE9vhn%2fu5oLMAQ%2fHM%3d&risl=&pid=ImgRaw&r=0" alt="Search">
+            </button>
+        </div>
+    </form>
+
+    <script>
+        const filterDropdown = document.querySelector('.filter-dropdown');
+        const filterOptions = document.querySelector('.filter-options');
+
+        filterDropdown.addEventListener('click', () => {
+            filterOptions.classList.toggle('show');
+        });
+
+        // Close the filter options dropdown if the user clicks outside of it
+        window.addEventListener('click', (event) => {
+            if (!filterDropdown.contains(event.target)) {
+                filterOptions.classList.remove('show');
+            }
+        });
+    </script>
+
+
+
+
+    <div class="main">
+        {% for row in rows %}
+        <div class="row">
+            {% for card in row %}
+            <a href="{{ url_for('profile', influencer_name=card.Name, index=loop.index0) }}" class="card-link">
+
+
+                <div class="card">
+                    <div class="image">
+                        <img src="{{ card.image }}">
+                    </div>
+                    <div class="title">
+                        <h1>{{ card.Name }}</h1>
+                        
+
+                    </div>
+                    <div class="scores">
+                        <p><strong>Credibility Score:</strong> {{ card['Credibility_Score'] }}</p>
+                        <p><strong>RATING (1-5):</strong> {{ card.Rating }}</p>
+                    </div>
+                    <div class="des">
+
+                        <a href="{{ url_for('profile', influencer_name=card.Name) }}">Read More...</a>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
