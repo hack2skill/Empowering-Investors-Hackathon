@@ -1,6 +1,9 @@
 Team Name - InvestorNurture
-Problem Statement - Personalized Investment Recommendation Engine for     Diverse Portfolios
+
+Problem Statement - Personalized Investment Recommendation Engine for Diverse Portfolios
+
 Team Leader Email - anuheaven2@gmail.com
+
 A Brief of the Prototype:
  A web app that offers :
 1) Personalized investment recommendation engine.
