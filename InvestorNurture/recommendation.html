@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommendation Results</title>
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recommendation Results</h1>
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Coin</th>
+            <th>Price (USD)</th>
+            <th>1h Price Change</th>
+            <th>24h Price Change</th>
+            <th>7d Price Change</th>
+            <th>24h Volume</th>
+            <th>Market Cap</th>
+            <th>Date</th>
+        </tr>
+        {% for coin in recommendation %}
+        <tr>
+            <td>{{ coin.symbol }}</td>
+            <td>{{ coin.coin }}</td>
+            <td>{{ coin.price }}</td>
+            <td>{{ coin['1h_change'] }}</td>
+            <td>{{ coin['24h_change'] }}</td>
+            <td>{{ coin['7d_change'] }}</td>
+            <td>{{ coin['24h_volume'] }}</td>
+            <td>{{ coin['mkt_cap'] }}</td>
+            <td>{{ coin.date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+
+
