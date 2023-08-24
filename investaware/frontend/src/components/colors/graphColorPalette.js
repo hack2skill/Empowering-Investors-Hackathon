@@ -1,0 +1,17 @@
+export const GraphColorPalette = [
+  "#ED6D85",
+  "#56A1E5",
+  "#F7CE6B",
+  "#F9C175",
+  "#7C8FF5",
+  "#6BD7D7",
+  "#977DC1",
+  "#E9E778",
+  "#7FDEA5",
+  "#EB7DBC",
+  "#BB82DE",
+  "#E39981",
+  "#8DD2F0",
+  "#EC93A5",
+  "#56A1E5",
+];

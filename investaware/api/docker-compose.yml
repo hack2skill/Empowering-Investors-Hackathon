@@ -1,0 +1,20 @@
+version: '3.3'
+services:
+  app:
+    build: .
+    container_name: investaware-api-dev
+    platform: linux/amd64
+    image: infrabeyondirr/tech:investaware-api-dev
+    command: python manage.py runserver 0.0.0.0:8010
+    volumes:
+      - /home/ubuntu/logs/dev:/backend/logs
+    ports:
+      - 8010:8010
+    env_file:
+      - aware.env
+    networks:
+      - investaware_dev
+
+networks:
+  investaware_dev:
+    name: investaware_dev
