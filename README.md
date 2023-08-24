@@ -49,7 +49,7 @@ The Prototype is disected into 3 parts
 
   
 ## What I Learned:
-During the development of the prototype, the most significant learning I had was the immense potential and power of AI-driven testing and automation in revolutionizing the software development process. As the prototype evolved and integrated various elements, I witnessed firsthand how the combination of AI-driven test case generation, seamless code management integration, and continuous monitoring could create a highly efficient and effective testing solution.
+During the development of the prototype, the most significant learning I had was the immense potential and power of AI-driven and automation in revolutionizing the fin-tech world. As the prototype evolved and integrated various elements, I witnessed firsthand how the combination of AI-driven can help in identfying misleading claims, seamless embedding model management integration using langchain could create a highly efficient and effective solution.
 
 One of the key takeaways from the development process was the remarkable speed at which the prototype could execute tests and provide feedback. AI's ability to rapidly analyze code, generate relevant test cases, and prioritize critical areas for testing significantly reduced the time required for testing. This acceleration translated into faster development cycles and quicker time-to-market for software products.
 
