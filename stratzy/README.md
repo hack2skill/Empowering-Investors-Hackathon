@@ -5,7 +5,7 @@
 #### Team Leader Email - mohit@stratzy.in
 
 ## A Brief of the Prototype:
-<img width="719" alt="Diagram" src="https://github.com/ved115/stratzy/assets/7903563/85558619-c333-4888-bec2-3dbb4274a2a1">
+<img width="714" alt="Screenshot 2023-08-24 at 3 26 34 PM" src="https://github.com/ved115/Empowering-Investors-Hackathon/assets/7903563/3489b977-f02c-4f0b-88ea-e7d99b2460ce">
 
   We use an LLM model to create a summary of the management concalls which allows retail investors to quickly glance over the main pointers organised by each speaker. Each pointer is clickable which takes them to the page on the pdf where the information in the pointer is referenced from.
   
