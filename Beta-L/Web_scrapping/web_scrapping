@@ -1,0 +1,124 @@
+import mysql.connector
+from googleapiclient.discovery import build
+from pytube import YouTube
+
+# MySQL database connection parameters
+import ssl
+
+# Disable SSL certificate verification
+ssl._create_default_https_context = ssl._create_unverified_context
+
+
+db_params = {
+    "host": "sebi-hackathon.mysql.database.azure.com",
+    "user": "mysql",
+    "password": "Betateam-L",
+    "database": "youtube_data"
+}
+
+# YouTube Data API key
+api_key = "AIzaSyD8Eo2iz2butc0qZN6EHRdHlRAy__9FJ6Y"
+
+# Create a MySQL database connection
+db_connection = mysql.connector.connect(**db_params)
+db_connection.set_charset_collation('utf8mb4', 'utf8mb4_unicode_ci')
+db_cursor = db_connection.cursor()
+
+def video_exists(video_url):
+    select_query = "SELECT COUNT(*) FROM youtube_videos WHERE video_url = %s"
+    db_cursor.execute(select_query, (video_url,))
+    count = db_cursor.fetchone()[0]
+    return count > 0
+
+
+def extract_and_store_youtube_data(video_url):
+    try:
+        # Create a YouTube object
+        yt = YouTube(video_url)
+        video_id = yt.video_id
+
+        if not video_exists(video_id):
+            # Extract video details
+            video_title = yt.title
+            video_description = yt.description
+
+            # Fetch video metrics using YouTube Data API
+            youtube = build("youtube", "v3", developerKey=api_key)
+            response = youtube.videos().list(part="statistics,snippet", id=video_id).execute()
+            video_stats = response["items"][0]["statistics"]
+            video_likes = video_stats.get("likeCount", 0)
+            video_dislikes = video_stats.get("dislikeCount", 0)
+            video_comment_count = video_stats.get("commentCount", 0)
+
+            # Fetch video comments using YouTube Data API
+            comments_response = youtube.commentThreads().list(part="snippet", videoId=video_id).execute()
+            video_comments = [comment["snippet"]["topLevelComment"]["snippet"]["textDisplay"] for comment in comments_response.get("items", [])]
+
+            # Extract YouTuber's name and channel name
+            # channel_title = yt.author
+            channel_name_response = youtube.channels().list(part="snippet", id=yt.channel_id).execute()
+            channel_name = channel_name_response["items"][0]["snippet"]["title"]
+
+            # Store data in MySQL database
+            insert_query = """
+            INSERT INTO youtube_videos (title, description, likes, dislikes, comment_count, comments, video_url, channel_name, video_id)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """
+            values = (video_title, video_description, video_likes, video_dislikes, video_comment_count, "\n".join(video_comments), video_url, channel_name, video_id)
+
+            db_cursor.execute(insert_query, values)
+            db_connection.commit()
+
+            print("Data inserted successfully!")
+        else:
+            print("Video already exists in the database.")
+
+    except Exception as e:
+        print("An error occurred:", str(e))
+
+
+def fetch_search_queries_from_file(file_path):
+    with open(file_path, "r") as file:
+        search_queries = file.read().splitlines()
+    return search_queries
+
+def fetch_and_store_fintech_influencer_data():
+    # Fetch fintech influencer video URLs using the YouTube Data API
+    youtube = build("youtube", "v3", developerKey=api_key)
+    search_queries = fetch_search_queries_from_file("search_queries.txt")
+    
+
+    for query in search_queries:
+        next_page_token = None
+        while True:
+            search_response = youtube.search().list(
+                q=query,
+                part="id",
+                maxResults=50,  # Maximum number of results per request
+                pageToken=next_page_token
+            ).execute()
+
+            for item in search_response["items"]:
+                try:
+                    video_id = item["id"]["videoId"]
+                    video_url = f"https://www.youtube.com/watch?v={video_id}"
+                    extract_and_store_youtube_data(video_url)
+                except KeyError as e:
+                    print("Error extracting videoId:", e)
+                    print("Item dictionary:", item)
+
+            # Check if there are more pages of results
+            next_page_token = search_response.get("nextPageToken")
+            if not next_page_token:
+                break  # No more results to fetch
+
+def main():
+    fetch_and_store_fintech_influencer_data()
+
+# Run the main function
+if __name__ == "__main__":
+    main()
+
+# Close the database connection
+db_cursor.close()
+db_connection.close()
