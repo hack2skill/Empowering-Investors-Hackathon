@@ -24,17 +24,20 @@ Web Development Frameworks: For building the user interface and backend systemsÂ
 
 ## Step-by-Step Code Execution Instructions:
 
-1. Install all the depencies
+1. Clone the repository
+   `git clone https://github.com/MJ-NJ/Empowering-Investors-Hackathon-Team-Error.git`
+
+2. Install all the depencies
 
 `pip install -r requirements.txt`
 
-2. Run run.py file
+3. Run run.py file
 
 `python -m run.py`
 
 If unable to run from the file then run the python files in each folder seperately for each feature
 
-3. Give the input that you would like to use
+4. Give the input that you would like to use
 
 Enter 1 for Book Recommendation
 Enter 2 for Market Insights
