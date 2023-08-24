@@ -30,13 +30,13 @@ Demo Video : https://drive.google.com/file/d/19XEfTAJg9SRasPMAOhiWdkwGQsiUGfsf/v
 ## Tech Stack: 
 
 #### HTML, CSS & Angular (UI Playground)
-#### GCP Cloud
+#### Google Cloud Platform Services (Backend)
 
 
 ## Step-by-Step Code Execution Instructions:
 #### UI Playground/ Sandbox - User Story
 1. Open Link : https://brave-glacier-0ade3280f.3.azurestaticapps.net
-   (Due to Costing Constraints of cloud-resources and openai-Api. Please ping us before exploring our live site) 
+   &nbsp;(Due to Costing Constraints of cloud-resources and openai-Api. Please ping us before exploring our live site) 
 3. Enter Youtube Link as an input &nbsp;
 ####   2.1  Youtube Link 1 : https://youtube.com/shorts/Ud9HJffKFds?si=Fga8DFzFSU9hWcAC &nbsp;
 ####   2.2  Youtube Link 2 : https://youtube.com/shorts/abgriPKGPHc?si=Afb0LymB98eJVoFz &nbsp;
@@ -45,10 +45,11 @@ Demo Video : https://drive.google.com/file/d/19XEfTAJg9SRasPMAOhiWdkwGQsiUGfsf/v
 4. Once the link is entered click the button "Analyse"
 5. Backend will be fired it will take abount 30-40 seconds to return back the results and get populated in the User Interface
 6. Once results are populated you can check various paramters
-7. If wanted head on to the Q&A and ask your own questoin against the video content
+7. If wanted head on to the Q&A and ask your own question against the video content
 8. If you want to provide Q&A Against SEBI Guidelines Then headon to SEBI GUIDELINE section in the same page
     Note : When Providing your questions Keep your questions relevent to content / video 
 
+#### Backend has been deployed on cloud incorporating multiple services of various domains 
   
 ## What I Learned:
 During the development of the prototype, the most significant learning I had was the immense potential and power of AI-driven and automation in revolutionizing the fin-tech world. As the prototype evolved and integrated various elements, I witnessed firsthand how the combination of AI-driven can help in identfying misleading claims, seamless embedding model management integrations could create a highly efficient and effective solution.
