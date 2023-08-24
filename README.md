@@ -1,5 +1,5 @@
 # Empowering-Investors-Hackathon
-
+Please check the submitted video. Thanks!!!
 ## Submission Instruction:
   1. Fork this repository
   2. Create a folder with your Team Name
