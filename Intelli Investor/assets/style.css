@@ -1,0 +1,30 @@
+.textarea-screener{
+    color: black;
+    width:90%;
+    height :100px; 
+    margin: 35px;
+    padding:10px;
+    font-weight:bold;
+    marginTop:6px;
+    font-size:16px;
+    marginLeft:4px;
+    border:2px solid #ccc;
+    border-radius:10px;
+}
+
+.textarea-screenertwo{
+  color: black;
+  width:90%;
+  height :100px; 
+  margin: 35px;
+  padding:10px;
+  font-weight:bold;
+  marginTop:6px;
+  font-size:16px;
+  marginLeft:4px;
+  border:2px solid #ccc;
+  border-radius:10px;
+      background-color:white;
+      color:black;
+  
+}
