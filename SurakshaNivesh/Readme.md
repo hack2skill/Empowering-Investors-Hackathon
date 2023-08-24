@@ -80,6 +80,8 @@ Command-line tools for development and deployment
 ## Step-by-Step Code Execution Instructions:
  The prototype is built on React.js, All the files are in this repo. 
 But to make it easier for demonstration, I have hosted it on Figma's Prototype server too, so you can take a look by clicking through the following link:
+bit.ly/surakshanivesh
+or
 https://www.figma.com/proto/pw7ZcD3tLDpszEpGGSe3wH/SurakashNivesh?page-id=0%3A1&type=design&node-id=3-1297&viewport=1020%2C175%2C0.16&t=uZWIy4pEp209U437-1&scaling=min-zoom&starting-point-node-id=3%3A1297&mode=design
 
 The app is just in prototype phase as of now, and contains dummy data for now.
