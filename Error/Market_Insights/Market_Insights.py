@@ -28,7 +28,7 @@ add_meta_tag()
 
 today = date.today()  
 st.write('''# I.N.V.E.S.T. ''') 
-st.sidebar.image("./StockStream/StockStream/Images/237e57514b5e59a375c74748a055d4cd-removebg-preview.png", width=250,
+st.sidebar.image("Error\Market_Insights\Market_Insights\Images\invest.png", width=250,
                  use_column_width=False)  # logo
 st.sidebar.write('''# I.N.V.E.S.T. ''')
 with st.sidebar: 
@@ -39,7 +39,7 @@ start = st.sidebar.date_input(
 end = st.sidebar.date_input('End', datetime.date.today())  
 
 
-stock_df = pd.read_csv("./StockStream/StockStream/StockData.csv")
+stock_df = pd.read_csv("Error\Market_Insights\Market_Insights\StockData.csv")
 
 
 if(selected == 'Stocks Performance Comparison'):  
@@ -51,7 +51,7 @@ if(selected == 'Stocks Performance Comparison'):
         time.sleep(2)
         
 
-    dict_csv = pd.read_csv('./StockStream/StockStream/StockData.csv', header=None, index_col=0).to_dict()[1]  # read csv file
+    dict_csv = pd.read_csv('Error\Market_Insights\Market_Insights\StockData.csv', header=None, index_col=0).to_dict()[1]  # read csv file
     symb_list = []  
     for i in dropdown:  
         val = dict_csv.get(i)  
@@ -127,7 +127,7 @@ elif(selected == 'Real-Time Stock Price'):
     with st.spinner('Loading...'):  
             time.sleep(2)
 
-    dict_csv = pd.read_csv('./StockStream/StockStream/StockData.csv', header=None, index_col=0).to_dict()[1]  # read csv file
+    dict_csv = pd.read_csv('Error\Market_Insights\Market_Insights\StockData.csv', header=None, index_col=0).to_dict()[1]  # read csv file
     symb_list = []  
 
     val = dict_csv.get(a)  
@@ -194,7 +194,7 @@ elif(selected == 'Stock Prediction'):
     a = st.selectbox('Pick a Company', tickers)
     with st.spinner('Loading...'):  
              time.sleep(2)
-    dict_csv = pd.read_csv('./StockStream/StockStream/StockData.csv', header=None, index_col=0).to_dict()[1]  
+    dict_csv = pd.read_csv('Error\Market_Insights\Market_Insights\StockData.csv', header=None, index_col=0).to_dict()[1]  
     symb_list = []  
     val = dict_csv.get(a)  
     symb_list.append(val)  
@@ -242,4 +242,3 @@ elif(selected == 'Stock Prediction'):
         st.subheader("Forecast components of {}".format(a))  
         fig2 = m.plot_components(forecast)  
         st.write(fig2)  
-

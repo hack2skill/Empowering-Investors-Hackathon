@@ -14,7 +14,8 @@
 #### Team Leader Email -
 
 ## A Brief of the Prototype:
-  This section must include UML Diagrams and prototype description
+
+
   
 ## Tech Stack: 
    List Down all technologies used to Build the prototype
@@ -28,3 +29,11 @@
 #### TEAM NAME  : ERROR
 #### PROBLEM STATEMENT : Content Curation and Education
 #### TEAM LEADER EMAIL : sgupta12_be21@thapar.edu
+
+## A Brief of the Prototype: 
+![INVEST-UML Diagram](https://drive.google.com/file/d/1mqsWTJtNvJc1Im6i2b_WlNRzBN42ch6T/view?usp=drive_link)
+
+
+## Step-by-Step Code Execution Instructions:
+
+## What I Learned:
