@@ -1,0 +1,54 @@
+{ 
+    "version": "2.0.0", 
+    "presentation": { 
+        "echo": false, 
+        "reveal": "always", 
+        "focus": false, 
+        "panel": "dedicated", 
+        "showReuseMessage": true 
+    }, 
+    "tasks": [ 
+        { 
+            "label": "Create Terminals", 
+            "dependsOn": ["client", "server", "tsc"], 
+            "group": { 
+                "isDefault": true 
+            }, 
+            "runOptions": { 
+                "runOn": "folderOpen" 
+            },
+            "type": "shell", 
+            "command": "bash"
+        },
+        { 
+            "label": "client", 
+            "type": "shell", 
+            "command": "cd client && npm install && npm run dev", 
+            "isBackground": true, 
+            "problemMatcher": [], 
+            "presentation": { 
+                "group": "my-group" 
+            } 
+        },
+        { 
+            "label": "server", 
+            "type": "shell", 
+            "command": "cd server && npm install && npm start", 
+            "isBackground": true, 
+            "problemMatcher": [], 
+            "presentation": { 
+                "group": "my-group" 
+            } 
+        },
+        { 
+            "label": "tsc", 
+            "type": "shell", 
+            "command": "cd server && tsc -w", 
+            "isBackground": true, 
+            "problemMatcher": [], 
+            "presentation": { 
+                "group": "compile" 
+            } 
+        }
+    ] 
+}
