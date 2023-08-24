@@ -24,3 +24,7 @@
   
 ## What I Learned:
    Write about the biggest learning you had while developing the prototype
+
+#### TEAM NAME  : ERROR
+#### PROBLEM STATEMENT : Content Curation and Education
+#### TEAM LEADER EMAIL : sgupta12_be21@thapar.edu
