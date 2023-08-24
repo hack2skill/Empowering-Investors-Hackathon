@@ -8,12 +8,12 @@ class Wav_To_Text(BaseEstimator, TransformerMixin):
 
     def __init__(self, audio_file_path = "output.wav"):
         self.audio_file_path = audio_file_path
-        pass
+        return
 
-    def fit(self):
+    def fit(self, X=None, y=None):
         return self
 
-    def transform(self):
+    def transform(self, X=None):
 
         with sr.AudioFile(self.audio_file_path) as source:
             # Adjust for ambient noise if needed
@@ -26,7 +26,9 @@ class Wav_To_Text(BaseEstimator, TransformerMixin):
                 text = recognizer.recognize_google(audio_data)
                 
                 print("Transcribed Text:")
-                print(text)
+                print(text)\
+                
+                print("Text generated now moving on to next stage")
                 return text
             except sr.UnknownValueError:
                 print("Google Web Speech API could not understand the audio")
@@ -34,3 +36,7 @@ class Wav_To_Text(BaseEstimator, TransformerMixin):
             except sr.RequestError as e:
                 print(f"Could not request results from Google Web Speech API; {e}")
                 return None
+        
+if __name__ == "__main__":
+    wav = Wav_To_Text("output.wav")
+    wav.transform(X=None)
