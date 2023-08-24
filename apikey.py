@@ -1,4 +1,4 @@
-apikey = "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" #Bobby key
+apikey = "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" #Bobby key
 
 ''
 
