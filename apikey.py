@@ -1,4 +1,6 @@
-apikey = "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" #Bobby key
+import streamlit as st
+
+apikey = st.secrets['openai_apikey'] #Bobby key
 
 ''
 
