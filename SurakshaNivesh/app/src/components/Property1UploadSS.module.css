@@ -1,0 +1,30 @@
+.stockName {
+  position: relative;
+  font-weight: 500;
+}
+.property1uploadSs,
+.stockNameWrapper,
+.uploadScreenshotWrapper {
+  border-radius: var(--br-mini);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-9xs) var(--padding-5xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.property1uploadSs,
+.uploadScreenshotWrapper {
+  background-color: var(--color-white);
+  color: var(--color-mediumslateblue);
+}
+.property1uploadSs {
+  position: relative;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-aliceblue);
+  padding: var(--padding-4xs) var(--padding-mini);
+  gap: var(--gap-mini);
+  text-align: left;
+  font-size: var(--font-size-smi);
+  color: var(--color-darkslategray-300);
+  font-family: var(--font-poppins);
+}

@@ -1,0 +1,20 @@
+.enterPennyStock {
+  position: relative;
+}
+.property1frame14 {
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--color-whitesmoke-200);
+  width: 278px;
+  height: 39px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-mini) var(--padding-base);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 10.52px;
+  color: var(--color-darkgray-300);
+  font-family: var(--font-lexend);
+}

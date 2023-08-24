@@ -1,0 +1,23 @@
+.vectorIcon {
+  width: 13.44px;
+  height: 10.75px;
+}
+.ctaWithIcon,
+.property1button,
+.vectorIcon {
+  position: relative;
+}
+.property1button {
+  border-radius: var(--br-5xs);
+  background-color: var(--color-mediumslateblue);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-satoshi);
+}

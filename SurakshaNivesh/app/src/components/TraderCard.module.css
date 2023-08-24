@@ -1,0 +1,121 @@
+.vectorIcon {
+  position: relative;
+  width: 3.69rem;
+  height: 3.69rem;
+  z-index: 0;
+}
+.vectorIcon1 {
+  position: absolute;
+  margin: 0 !important;
+  height: 45%;
+  width: 54.3%;
+  top: 30.1%;
+  right: 26.8%;
+  bottom: 24.9%;
+  left: 18.9%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.logostelegram {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.iitianTraderOfficial,
+.logostelegram {
+  position: relative;
+}
+.iitiantraderofficial {
+  position: relative;
+  font-size: var(--font-size-lg);
+}
+.iitianTraderOfficialParent,
+.logostelegramParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.logostelegramParent {
+  position: absolute;
+  top: 3.94rem;
+  left: 1.94rem;
+  flex-direction: row;
+  gap: var(--gap-xs);
+  font-size: var(--font-size-3xl);
+}
+.buyRelianceAt,
+.callsTipsShared {
+  position: absolute;
+  top: 9.5rem;
+  left: calc(50% - 287px);
+}
+.buyRelianceAt {
+  left: calc(50% - 112px);
+  font-weight: 500;
+}
+.buyOngcAt,
+.sellBhelAt,
+.sellGnfcAt,
+.sellSailAt {
+  position: absolute;
+  top: 11.69rem;
+  left: calc(50% - 111px);
+  font-weight: 500;
+}
+.buyOngcAt,
+.sellGnfcAt,
+.sellSailAt {
+  top: 14rem;
+}
+.sellGnfcAt,
+.sellSailAt {
+  top: 16.19rem;
+}
+.sellGnfcAt {
+  top: 18.5rem;
+}
+.vectorIcon2 {
+  position: relative;
+  width: 0.84rem;
+  height: 0.67rem;
+  display: none;
+}
+.vectorParent {
+  position: absolute;
+  top: 21.63rem;
+  left: 29rem;
+  border-radius: var(--br-4xl);
+  background-color: var(--color-mediumslateblue);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xs) var(--padding-lg);
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+}
+.component31 {
+  position: absolute;
+  top: 20.75rem;
+  left: 24.94rem;
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  box-shadow: var(--white-card);
+  width: 40.75rem;
+  height: 25.13rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-darkslategray-300);
+  font-family: var(--font-satoshi);
+}

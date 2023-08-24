@@ -1,0 +1,39 @@
+.component1selectedActiveChild {
+  position: relative;
+  width: 3px;
+  height: 19px;
+}
+.vectorIcon {
+  width: 16px;
+  height: 14.48px;
+}
+.dashboard,
+.vectorIcon {
+  position: relative;
+}
+.component1selectedActive,
+.vectorParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.vectorParent {
+  border-radius: var(--br-6xs);
+  background-color: var(--color-white);
+  box-shadow: 2px 4px 17px rgba(0, 0, 0, 0.03);
+  width: 202px;
+  padding: var(--padding-xs) var(--padding-26xl) var(--padding-xs)
+    var(--padding-sm);
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.component1selectedActive {
+  position: relative;
+  padding: 0 var(--padding-lg) 0 0;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-satoshi);
+}

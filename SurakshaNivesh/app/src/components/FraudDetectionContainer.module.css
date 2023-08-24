@@ -1,0 +1,104 @@
+.frameChild,
+.frameItem {
+  position: absolute;
+  top: 1.39rem;
+  left: 0.95rem;
+  border-top: 1.5px solid var(--color-lightgray);
+  box-sizing: border-box;
+  width: 22.66rem;
+  height: 0.09rem;
+}
+.frameItem {
+  top: 3.2rem;
+}
+.credibilityScore,
+.influencer,
+.reason {
+  position: absolute;
+  top: 1.75rem;
+  left: 2.31rem;
+  font-weight: 500;
+}
+.credibilityScore,
+.reason {
+  top: 1.81rem;
+  left: 10.56rem;
+}
+.reason {
+  top: 1.75rem;
+  left: 20.38rem;
+}
+.frameInner {
+  position: relative;
+  border-radius: 50%;
+  width: 3.41rem;
+  height: 3.41rem;
+  object-fit: cover;
+}
+.div,
+.fakePnl {
+  position: relative;
+  font-weight: 500;
+}
+.fakePnl {
+  color: var(--color-red);
+}
+.ellipseParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-81xl);
+}
+.ellipseGroup,
+.frameWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ellipseGroup {
+  width: 21.11rem;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-79xl);
+}
+.noSetup {
+  position: relative;
+  font-weight: 500;
+  color: var(--color-red);
+  display: inline-block;
+  width: 3.5rem;
+  flex-shrink: 0;
+}
+.ellipseParent2,
+.frameParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-76xl);
+}
+.frameParent {
+  position: absolute;
+  top: 4.63rem;
+  left: 2.69rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-xl);
+}
+.lineParent {
+  position: absolute;
+  top: 14.25rem;
+  left: 49.19rem;
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  box-shadow: var(--white-card);
+  width: 24.63rem;
+  height: 32.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm-6);
+  color: var(--color-dimgray);
+  font-family: var(--font-satoshi);
+}

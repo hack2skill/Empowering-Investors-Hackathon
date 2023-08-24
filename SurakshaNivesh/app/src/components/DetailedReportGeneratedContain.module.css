@@ -1,0 +1,248 @@
+.detailedReportGenerated {
+  position: absolute;
+  top: 1.31rem;
+  left: calc(50% - 148px);
+  font-weight: 500;
+  color: var(--color-mediumslateblue);
+}
+.suzlonTechnsebse {
+  color: var(--color-darkslategray-300);
+}
+.stockNameSuzlonContainer {
+  position: relative;
+  font-weight: 500;
+}
+.stockNameSuzlonTechnsebsParent {
+  position: absolute;
+  top: 4.94rem;
+  left: calc(50% - 429px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-17xl);
+  font-size: var(--font-size-lg);
+  color: var(--color-darkgray-400);
+}
+.summaryTheStock {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  width: 51.94rem;
+  flex-shrink: 0;
+}
+.summaryTheStockWasSuggestWrapper {
+  position: absolute;
+  top: 7.75rem;
+  left: 2.81rem;
+  border-radius: var(--br-xs);
+  background-color: var(--color-lavenderblush);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-darkslategray-300);
+  font-family: var(--font-satoshi);
+}
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4.67rem;
+  height: 4.67rem;
+}
+.div {
+  position: relative;
+  font-weight: 600;
+}
+.negativeSignals {
+  position: relative;
+  font-size: var(--font-size-7xs);
+  text-transform: capitalize;
+  font-family: var(--font-satoshi);
+}
+.parent {
+  position: absolute;
+  top: 1.81rem;
+  left: 0.94rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.03rem;
+}
+.groupParent {
+  position: absolute;
+  top: 13.63rem;
+  left: 8rem;
+  width: 4.69rem;
+  height: 4.69rem;
+  font-size: 0.47rem;
+  font-family: var(--font-inter);
+}
+.frameItem {
+  position: relative;
+  background-color: var(--color-forestgreen);
+  width: 0.37rem;
+  height: 0.88rem;
+}
+.rectangleWrapper {
+  height: 1.85rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.frameInner,
+.rectangleDiv {
+  position: relative;
+  background-color: var(--color-forestgreen);
+  width: 0.37rem;
+  height: 0.69rem;
+}
+.rectangleDiv {
+  height: 0.56rem;
+}
+.frameChild1 {
+  height: 0.17rem;
+}
+.frameChild1,
+.frameChild2,
+.frameChild4 {
+  position: relative;
+  background-color: var(--color-forestgreen);
+  width: 0.37rem;
+}
+.frameChild2 {
+  height: 0.01rem;
+}
+.frameChild4 {
+  align-self: stretch;
+}
+.rectangleFrame {
+  height: 0.07rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.frameChild5 {
+  position: relative;
+  background-color: var(--color-forestgreen);
+  width: 0.37rem;
+  height: 0.16rem;
+}
+.rectangleWrapper3 {
+  height: 0.47rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.rectangleWrapper4,
+.rectangleWrapper5,
+.rectangleWrapper7,
+.rectangleWrapper8 {
+  height: 0.72rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.rectangleWrapper5,
+.rectangleWrapper7,
+.rectangleWrapper8 {
+  height: 1.09rem;
+}
+.rectangleWrapper7,
+.rectangleWrapper8 {
+  height: 1.24rem;
+}
+.rectangleWrapper8 {
+  height: 1.55rem;
+}
+.rectangleWrapper10,
+.rectangleWrapper12,
+.rectangleWrapper13,
+.rectangleWrapper14 {
+  height: 1.67rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.rectangleWrapper12,
+.rectangleWrapper13,
+.rectangleWrapper14 {
+  height: 1.48rem;
+}
+.rectangleWrapper13,
+.rectangleWrapper14 {
+  height: 1.31rem;
+}
+.rectangleWrapper14 {
+  height: 0.99rem;
+}
+.frameChild20 {
+  position: relative;
+  background-color: var(--color-forestgreen);
+  width: 0.37rem;
+  height: 1.55rem;
+}
+.frameParent {
+  position: absolute;
+  top: 0.72rem;
+  left: 0;
+  width: 15.56rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.oppositeOiTrend {
+  position: absolute;
+  top: -1rem;
+  left: 1.69rem;
+  font-weight: 600;
+}
+.span1 {
+  font-size: 1.45rem;
+}
+.scamProne1 {
+  font-size: var(--font-size-xs);
+}
+.scamProne {
+  position: absolute;
+  top: 0.44rem;
+  left: 21.25rem;
+  font-weight: 600;
+  color: var(--color-salmon-200);
+  font-size: var(--font-size-9xl);
+}
+.lineAndBarChart {
+  position: absolute;
+  top: 15rem;
+  left: 21.38rem;
+  width: 15.56rem;
+  height: 3.2rem;
+  font-size: 0.83rem;
+  font-family: var(--font-inter);
+}
+.component40 {
+  position: absolute;
+  top: 17.63rem;
+  left: 17.25rem;
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  box-shadow: var(--white-card);
+  width: 59.25rem;
+  height: 32.56rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-gray-400);
+  font-family: var(--font-poppins);
+}

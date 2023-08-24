@@ -1,0 +1,109 @@
+.iitianTraderGroup {
+  position: absolute;
+  top: 1.31rem;
+  left: calc(50% - 170px);
+  font-size: var(--font-size-3xl);
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-mediumslateblue);
+  text-align: left;
+}
+.lineAndBarChart {
+  position: absolute;
+  top: 15rem;
+  left: 21.38rem;
+  width: 15.56rem;
+  height: 3.2rem;
+}
+.span {
+  color: var(--color-lightgreen);
+}
+.callsPassContainer {
+  position: relative;
+  font-weight: 500;
+}
+.capital {
+  color: var(--color-salmon-200);
+}
+.callsPass7Parent {
+  position: absolute;
+  top: 5.94rem;
+  left: 2.88rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xl);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-poppins);
+}
+.component40Child {
+  position: absolute;
+  top: 8.56rem;
+  left: 2.88rem;
+}
+.surakshaniveshSuggestsYou {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  width: 51.94rem;
+  flex-shrink: 0;
+}
+.surakshaniveshSuggestsYouToWrapper {
+  position: absolute;
+  top: 9.81rem;
+  left: 2.56rem;
+  border-radius: var(--br-xs);
+  background-color: var(--color-lavenderblush);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-base);
+}
+.vectorIcon {
+  width: 0.84rem;
+  height: 0.67rem;
+  display: none;
+}
+.scammerReportedSuccesfully,
+.vectorIcon {
+  position: relative;
+}
+.vectorGroup,
+.vectorParent {
+  position: absolute;
+  background-color: var(--color-tomato-200);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xs) var(--padding-lg);
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  color: var(--color-white);
+}
+.vectorParent {
+  top: 30.25rem;
+  left: 20.25rem;
+}
+.vectorGroup {
+  top: 0;
+  left: 49.31rem;
+}
+.component40 {
+  position: absolute;
+  top: 16.63rem;
+  left: 17.13rem;
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  box-shadow: var(--white-card);
+  width: 59.25rem;
+  height: 32.56rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslategray-300);
+  font-family: var(--font-satoshi);
+}

@@ -1,0 +1,21 @@
+.surakshaAiIs {
+  position: absolute;
+  top: 1.94rem;
+  left: calc(50% - 192px);
+  font-weight: 500;
+}
+.component40 {
+  position: absolute;
+  top: 18.75rem;
+  left: 24.25rem;
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  box-shadow: var(--white-card);
+  width: 40.75rem;
+  height: 22rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-mediumslateblue);
+  font-family: var(--font-poppins);
+}

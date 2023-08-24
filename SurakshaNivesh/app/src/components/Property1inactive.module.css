@@ -1,0 +1,41 @@
+.property1inactiveChild {
+  position: relative;
+  width: 3px;
+  height: 19px;
+  display: none;
+}
+.vectorIcon {
+  position: relative;
+  width: 16px;
+  height: 14.48px;
+}
+.dashboard {
+  position: relative;
+  font-weight: 500;
+}
+.property1inactive,
+.vectorParent {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+}
+.vectorParent {
+  border-radius: var(--br-6xs);
+  box-shadow: 2px 4px 17px rgba(0, 0, 0, 0.03);
+  width: 202px;
+  padding: var(--padding-xs) var(--padding-26xl) var(--padding-xs)
+    var(--padding-23xl);
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.property1inactive {
+  position: relative;
+  width: 243px;
+  padding: 0 var(--padding-lg) 0 0;
+  justify-content: space-between;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkgray-200);
+  font-family: var(--font-satoshi);
+}
