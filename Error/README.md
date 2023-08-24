@@ -37,7 +37,7 @@ Web Development Frameworks: For building the user interface and backend systemsÂ
 1. Enter 1 for Book Recommendation
 1. Enter 2 for Market Insights
 1. Enter 3 for Stock Market News
-1. Enter 4 for Q-A-Bot
+1. Enter 4 for Q-A-Bot (Right now to run it download bin files from https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/blob/main/llama-2-7b-chat.ggmlv3.q8_0.bin)
 1. Enter 5 for Terms and conditions Summarization
 
 ## What I Learned:
