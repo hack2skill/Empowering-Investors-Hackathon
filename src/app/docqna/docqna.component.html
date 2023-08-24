@@ -1,0 +1,57 @@
+<nb-layout style="background-color: rgb(72, 72, 74); ">
+    <nb-layout-column style="background-color: rgb(72, 72, 74); border-radius: 8px;">
+        <div class="grid-container" style="background-color: rgba(245, 245, 245, 0.945)">
+            <div class="grid-item item3">
+                <div>
+                    <p>Enter Query</p>
+                    <textarea [(ngModel)]="inputquery" nbInput fullWidth
+                        style="height: 100px; margin-top: 10px;"></textarea>
+                </div>
+            </div>
+            <div class="grid-item item4">
+                <div>
+                    <button (click)="submitquery()" [disabled]="inputquery==undefined || inputquery.length==0" type="submit" class="btn">Submit</button>
+                    <button nbButton status="success" style="margin-left:2%; width:10%; height: 42px;"><img
+                            height="20px" width="20px" src="./assets/thup.png"></button>
+                    <button nbButton status="danger" style="margin-left:2%; width:10%; height: 42px;"><img height="20px"
+                            width="20px" src="./assets/thdown.png"></button>
+                </div>
+            </div>
+            <div class="grid-item item5">
+                <nb-card *ngIf="buttonclicked">
+                    <nb-card-header>Answer</nb-card-header>
+                    <nb-card-body>
+                        <p *ngIf="topAnswer==undefined && buttonclicked" style="font-weight: 400;" class="loading">
+                            Loading<span></span></p>
+                        <p *ngIf="topAnswer!=undefined" style="font-weight: 400;" class="loading">
+                            {{topAnswer['answer']}}</p>
+                    </nb-card-body>
+                    <nb-accordion *ngIf="topAnswer!=undefined">
+                        <nb-accordion-item>
+                            <nb-accordion-item-header>Reference</nb-accordion-item-header>
+                            <nb-accordion-item-body>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2">Source</th>
+                                            <th scope="col" colspan="5">File</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr colspan="2">
+                                            <td style="width:10%">{{topAnswer.File_name}}</td>
+                                            <td colspan="5"><div style="margin: 0 20%;"><pdf-viewer src="../../assets/docs/{{topAnswer.File_name}}" [rotation]="0" [original-size]="false" [show-all]="true" [fit-to-page]="false"
+                                                [zoom]="1" [zoom-scale]="'page-width'" [stick-to-page]="false" [render-text]="true"
+                                                [external-link-target]="'blank'" [autoresize]="true"
+                                                style="width: 600px; height: 500px;"></pdf-viewer></div></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </nb-accordion-item-body>
+                        </nb-accordion-item>
+                    </nb-accordion>
+                </nb-card>
+            </div>
+        </div>
+    </nb-layout-column>
+</nb-layout>

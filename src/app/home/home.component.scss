@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600&display=swap');
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #DFDFDF;
+    width: 100%;
+    min-height: 100%;
+    place-items: center;
+    position: absolute;
+}
+
+section{
+    height: 100%;
+    width: 100%;
+}
+
+
+#firstsection{
+    padding-bottom: 25px;
+}
+
+#secondsection{
+    // padding-top: 25px;
+}
+
+#thirdsection{
+    margin-bottom: 60px;
+    padding-bottom: 100px;
+    height: 100%;
+    width: 100%;
+}
+
+.topbox{
+    border-radius: 20px;
+    background-color: rgb(72, 72, 74);
+    padding: 40px;
+    padding-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 12%;
+    margin-top: 20px;
+}
+
+.midbox{
+    border-radius: 20px;
+    background-color: rgb(72, 72, 74);
+    padding-top: 30px;
+    // padding: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.bottombox{
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-left: 40px;
+    background-color: rgb(72, 72, 74);
+
+}
+
+.mainheading{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+.inputlink{
+    // margin-top: 20px;
+    margin-left: 3%;
+    margin-right: 5%;
+    width: 95%
+}
+
+.videopreview{
+    margin-left: 8%;
+    margin-top: 10px;
+    width: 380px;
+    height: 290px;
+}
+
+.transcription{
+    margin-top: 40px;
+    margin-left: 5%;
+    margin-right: 15%;
+    width: 90%
+}
+
+.analyzebtn {
+    margin-left: 45%;
+    // -ms-transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.infobubble{
+    margin-top: 20px;
+    margin-left: 8%;
+    width:100%;
+    text-align: left;
+   
+    // -ms-transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    // column-gap: 0px;
+}
+
+.category{
+    text-align: left;
+    // margin-right: 20px;
+}
+
+.topbar{
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+}
+
+.categorylink{
+    width: 10%;
+    // display: inline-block;
+
+}
+
+.confidencescore{
+    // margin-right: 20px;
+
+}
+
+.bagofwords{
+
+
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+.card{
+    border-radius: 15px;
+    width: auto;
+}
+
+.words{
+    background-color: #d8d9dc;
+    border-radius: 10px;
+    padding: 4px;
+    margin-right: 3px;
+}
+
+.verdict{
+    // margin-top: 40px;
+    // margin-left: 48%;
+    // width: 60%;
+    // -ms-transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+}
+
+
+
+.context{
+    // margin-top: 40px;
+    // margin-left: 48%;
+    // width: 60%;
+    // -ms-transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+}
+
+.verdicttext{
+ margin-top: 20px;
+}
+
+.contexttext{
+    margin-top: 20px;
+}
+
+.verdictandcontext{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 20px;
+    margin-left: 8%;
+    margin-right: 9%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.verdictcontexttext{
+    width: 380px;
+    height: 200px;
+}
+
+
+.videotranscription{
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.transcriptiontext{
+    height: 245px;
+}
+
+.docgrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+
+.loadingform span:before {
+    animation: formdots 60s linear;
+    content: '';
+  }
+  
+  @keyframes formdots {
+  
+    0% {
+        content: 'Sending Video';
+    }
+
+    4% {
+        content: 'Sending Video .';
+    }
+
+    8% {
+        content: 'Processing Video ..';
+    }
+
+    12% {
+        content: 'Processing Video ...';
+    }
+
+    16% {
+        content: 'Processing Video ....';
+    }
+
+    20% {
+        content: 'Converting Video to Text';
+    }
+
+    24% {
+        content: 'Converting Video to Text .';
+    }
+
+    28% {
+        content: 'Converting Video to Text ..';
+    }
+
+    32% {
+        content: 'Converting Video to Text ...';
+    }
+
+    36% {
+        content: 'Converting Video to Text ....';
+    }
+
+    40% {
+        content: 'Processing Text';
+    }
+
+    42% {
+        content: 'Processing Text .';
+    }
+
+    44% {
+        content: 'Processing Text ..';
+    }
+
+    46% {
+        content: 'Processing Text ...';
+    }
+
+    48% {
+        content: 'Processing Text ....';
+    }
+
+    50% {
+        content: 'Creating LLM Prompt';
+    }
+
+    52% {
+        content: 'Creating LLM Prompt .';
+    }
+
+    54% {
+        content: 'Creating LLM Prompt ..';
+    }
+
+    56% {
+        content: 'Creating LLM Prompt ...';
+    }
+
+    58% {
+        content: 'Creating LLM Prompt ....';
+    }
+
+    60% {
+        content: 'Calling LLM';
+    }
+
+    62% {
+        content: 'Calling LLM .';
+    }
+
+    64% {
+        content: 'Calling LLM ..';
+    }
+
+    66% {
+        content: 'Calling LLM ...';
+    }
+
+    68% {
+        content: 'Calling LLM ....';
+    }
+
+    70% {
+        content: 'Waiting for Results';
+    }
+
+    80% {
+        content: 'Waiting for Results .';
+    }
+
+    90% {
+        content: 'Waiting for Results ..';
+    }
+
+    100% {
+        content: 'Waiting for Results ...';
+    }
+  }

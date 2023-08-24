@@ -1,0 +1,134 @@
+<body>
+    <section #firstsection id="firstsection">
+        <nav class="navbar navbar-light " style="background-color: transparent;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../../assets/theturingtribe-logo.png" width="auto" height="100" alt="">
+                </a>
+                <h2 class="mainheading"
+                    style="text-align: center; font-family: 'Montserrat', sans-serif; font-weight: bolder; margin-right: 31%; font-size: 45px;">
+                    Content Analyzer</h2>
+            </div>
+
+        </nav>
+        <!-- <h1 class="mainheading" style="text-align: center; font-family: 'Montserrat', sans-serif; font-weight: bold; margin-top: 20px; font-size: 40px;">Tentative Heading</h1> -->
+        <div class="topbox">
+            <div class="input-group mb-3 inputlink">
+                <span class="input-group-text" id="basic-addon1" style="font-weight: bold;">Youtube Link</span>
+                <input type="text" class="form-control" #inputvideolink placeholder="Input The Youtube Link"
+                    aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <button *ngIf="this.isLinkEntered==false" type="button" class="btn btn-primary analyzebtn"
+                (click)="linkentered(inputvideolink.value)">Analyze</button>
+            <div *ngIf="this.isLinkEntered==true" class="videotranscription">
+
+                <iframe class="videopreview" width="420" height="315" [src]="finalytLink">
+                </iframe>
+                <div class="card" style="width: auto; height: 320px">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;">Transcription<span *ngIf="whileLoading"
+                                style="position: absolute; left: 64%;  font-weight: 600; font-size: small; margin-bottom: 30px;"
+                                class="loadingform"><span></span></span></h5>
+
+                        <textarea class="form-control transcriptiontext" [(ngModel)]="transcription"
+                            aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+                <!-- <div class="input-group transcription">
+            <span class="input-group-text" style="font-weight: bold;">Transcription</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div> -->
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section *ngIf="this.isAnalyzeClicked==true" #secondsection id="secondsection">
+
+        <div class="midbox">
+                <h1 style="font-size: 40px; font-weight: bold; margin-left: 10%; color: whitesmoke; display: inline;">
+                    Analysis</h1>
+                <span *ngIf="whileLoading" style="position: absolute; left: 35%; color:white; font-weight: 600; font-size: small; margin-top: 20px;" class="loadingform"><span></span></span>
+                <button *ngIf="this.isLinkEntered==true" type="button" class="btn btn-primary analyzebtn" style="margin-bottom: 10px;" (click)="qnaclicked()">Questioning</button>
+
+
+            <div class="infobubble">
+
+                <div class="category">
+                    <div class="card" style="width: 230px; height:110px">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold; ">Category</h5>
+                            <p class="card-text">{{category}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="confidencescore">
+                    <div class="card"style="width: 230px; height:110px">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">Confidence
+                                Score</h5>
+                            <p class="card-text">{{confidenceScore}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bagofwords">
+                    <div class="card" style="width: 350px; height:110px">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">List Of Descriptives</h5>
+                            <p class="card-text"><span class="words">{{basket}}</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="verdictandcontext">
+                <div class="verdict">
+                    <div class="card" style="width: auto; margin-bottom: 40px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold; ">Verdict Reasoning</h5>
+                            <textarea class="form-control verdictcontexttext" [(ngModel)]="reason"
+                                aria-label="With textarea"></textarea>
+                        </div>
+                    </div>
+                    <!-- <label for="verdictreasoning" class="verdictlabel" style="font-weight:bold">Verdict Reasoning</label>
+                <textarea class="form-control verdicttext" aria-label="With textarea"></textarea> -->
+                </div>
+
+                <!-- <div class="context"> -->
+                <div class="card" style="width: auto; margin-bottom: 40px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;">Missing Context</h5>
+                        <textarea class="form-control verdictcontexttext" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+                <!-- <label for="context" class="contextlabel" style="font-weight:bold">Missing or Relevant Context</label>
+                <textarea class="form-control contexttext" aria-label="With textarea"></textarea> -->
+                <!-- </div> -->
+            </div>
+
+        </div>
+    </section>
+    <section *ngIf="this.isAnalyzeClicked==true" #thirdsection id="thirdsection">
+        <div class="bottombox">
+            <h1 style="font-size: 30px; font-weight: bold; color: whitesmoke; margin-top: 30px">Documents Referenced
+            </h1>
+            <div class="docgrid">
+                <div class="doc" *ngFor="let regulation of sebiregulations">
+                    <pdf-viewer src="../../assets/sebiregulations/{{regulation}}" [rotation]="0" [original-size]="false"
+                        [show-all]="true" [fit-to-page]="false" [zoom]="1" [zoom-scale]="'page-width'"
+                        [stick-to-page]="false" [render-text]="true" [external-link-target]="'blank'"
+                        [autoresize]="true" [show-borders]="false" style="width: 90%; height: 300px;"></pdf-viewer>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+</body>
