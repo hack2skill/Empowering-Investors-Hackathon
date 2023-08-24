@@ -69,9 +69,9 @@ Financial Advice Detector Model trained on [Dummy dataset](https://docs.google.c
 Prerequisites:
  - python
  - pip
- - Preferably a linux environment
+ - A linux environment
 
- For the modules you can install both via pip (both OS):  
+ For the modules you can install both via pip:
 
 1) `pip install yt-dlp`
 
@@ -82,11 +82,16 @@ Prerequisites:
 
 To run the project first install the necessary requirements using:
 
-4) `pip install -r requirements.txt`
+4) Create a virtual environment using 
+`pip install virtualenv` and then `virtualenv env`
+
+5) Activate the virtual env `source env/bin/activate`
+
+6) `pip install -r requirements.txt` (Prefer a virtual environment for the same)
 
 And run:
 
-5) `streamlit run website.py`
+7) `streamlit run website.py`
 
 This would open up a web interface where you can provide the URL of the youtube video and the name of the influencer. 
 
