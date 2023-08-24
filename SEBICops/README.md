@@ -28,6 +28,9 @@ Setup Python environment with the below dependencies:
 - scikit-learn
 - streamlit
 
+## Raw Data
+- Raw Data can be download from [this](https://sponsor.ajay.app/database) link. Please be patient, it takes around 10-15 minutes, rest depends on the internet bandwidth.
+
 Run the app
 `streamlit run sebi_cops_streamlit_app.py`
   
