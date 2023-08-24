@@ -30,7 +30,7 @@ Tensorflow, Nltk, huggingface: for building the comment sections sentiments-anal
 Langchain: for chaining LLM model, with search agents for fact-check, as well as retrievalagent on documents of SEBI
 LLM model: for analysis, like openai, cohere, palm
 APIs of youtube and instagram for getting the video, text, caption, and other content fromthe URL
-   
+   <a href="https://ibb.co/WHyWcd7"><img src="https://i.ibb.co/hgWRKnr/klsw.png" alt="klsw" border="0"></a>
 ## Step-by-Step Code Execution Instructions:
   This Section must contain a set of instructions required to clone and run the prototype so that it can be tested and deeply analyzed
   `python -m venv env`
