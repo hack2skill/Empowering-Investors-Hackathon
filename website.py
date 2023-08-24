@@ -1,9 +1,11 @@
 import streamlit as st
 import time
+from Pipeline.main import trigger_pipeline
+
 # st.header("FinClear :money_with_wings:", anchor=False)
 st.markdown("<h1 style='text-align: center;'>FinClear</h1>",
             unsafe_allow_html=True)
-st.markdown("<p style='text-align: center;'>Clear your finances.</p>",
+st.markdown("<p style='text-align: center;'>Choose who you beleive rightly!</p>",
             unsafe_allow_html=True)
 
 
@@ -35,4 +37,11 @@ with form:
         if not res:
             st.error("Enter a valid URL.")
         else:
-            processData(input)
+            predicted = trigger_pipeline(input)
+            if predicted == 0:
+                st.success("The video is trustworthy.")
+            else:
+                st.error("The video is not trustworthy.")
+            
+            print("Done!")
+            # processData(input)
