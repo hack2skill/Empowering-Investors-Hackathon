@@ -32,7 +32,7 @@ worksheet = sheet.get_worksheet(0)  # Assuming we want to work with the first wo
 # st.success("Worksheet loaded")
 
 # -------------------Read in data from the Google Sheet -------------------------------+
-@st.experimental_memo(ttl=600)
+@st.cache_data(ttl=600)
 def load_data(sheets_url):
     csv_url = sheets_url.replace("/edit?usp=sharing", "/export?format=csv&gid=0")
     return pd.read_csv(csv_url,on_bad_lines='skip')
