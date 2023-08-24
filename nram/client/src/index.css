@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.type {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 1.4s steps(30, end) 1s 1 normal both, blinking 1s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinking {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(82, 81, 81);
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+.appear {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: animate 1s ease-in 2s forwards;
+}
+
+.appear2 {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: animate 1s ease-in 2.5s forwards;
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
