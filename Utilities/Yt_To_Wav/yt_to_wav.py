@@ -28,7 +28,7 @@ class Yt_To_Wav(BaseEstimator, TransformerMixin):
             # downloaded_filename = ydl.prepare_filename(info_dict)
         
         # Specify the absolute paths for the downloaded file and the new filename
-        directory = "/home/kyllex/fun/ctrans/FinClear"
+        directory = os.environ.get("PWD")
         print(directory)
         wav_files = glob.glob(os.path.join(directory, '*.wav'))
 

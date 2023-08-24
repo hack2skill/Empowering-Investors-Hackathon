@@ -24,6 +24,8 @@ def trigger_pipeline(url):
     # Scrape data from the URL and tokenize it
     prediction = pipeline.fit_transform(str(url))
     print("AT THE END OF THE DAY I HAVE PREDICTED ->",prediction)
+    
+    os.remove("output.wav")
     return prediction
 
 if __name__ == "__main__":
