@@ -9,12 +9,12 @@
 
 ## README.md must consist of the following information:
 
-#### Team Name -
-#### Problem Statement - 
-#### Team Leader Email -
+#### Team Name - Emperor
+#### Problem Statement - Misleading Claim Detection & Content Curation
+#### Team Leader Email - hindeshnit19@gmail.com
 
 ## A Brief of the Prototype:
-  This section must include UML Diagrams and prototype description
+  ![use_case](use_case.png)
   
 ## Tech Stack: 
    List Down all technologies used to Build the prototype

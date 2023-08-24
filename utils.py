@@ -10,16 +10,13 @@ import os
 import re
 import openai
 from transformers import pipeline  # Import pipeline from transformers
-from langchain.agents import load_tools
 from pydub import AudioSegment
 from moviepy.editor import VideoFileClip
-from streamlit_option_menu import option_menu
 from streamlit_player import st_player
 from langchain.tools import YouTubeSearchTool
 import requests
 from bs4 import BeautifulSoup
 import pytesseract
-import cv2
 from PIL import Image
  
 #--- SET API KEYS AND ENVIRONMENT VARIABLES ------------+
