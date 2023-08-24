@@ -1,5 +1,4 @@
 #----------------- IMPORTS -----------------+
-import sys
 import streamlit as st
 from apikey import apikey
 from prompts import *
@@ -10,7 +9,6 @@ import os
 import re
 import openai
 from transformers import pipeline  # Import pipeline from transformers
-from pydub import AudioSegment
 from moviepy.editor import VideoFileClip
 from streamlit_player import st_player
 from langchain.tools import YouTubeSearchTool

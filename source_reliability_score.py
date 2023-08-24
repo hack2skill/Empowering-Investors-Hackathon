@@ -3,19 +3,10 @@
 import pandas as pd
 import streamlit as st
 import datetime
-import re
-from streamlit_card import card
-from streamlit_elements import elements, mui, html
-from langchain.llms import OpenAI
-from apikey import apikey
-import openai
-import os
-import time
+from streamlit_elements import elements, mui
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
-os.environ["OPENAI_API_KEY"] = apikey
-openai.api_key = apikey
 
 
 #---------------- Authenticate with Google Sheets API ---------------------------------+
@@ -45,22 +36,17 @@ link = f"<a href=\"{url}\" style='text-align: center; color: #1e0096;'>{link_tex
 score_prompt = """Verify the above statement misleading or not. The output should contain only either MISLEADING or NOT MISLEADING. Do not output any other sentence apart from what I mentioned. Not even the sentence like \"Sure, here are the financial terms extracted from the given sentence:\" Print output in a single line."""
 
 #--------------------------- FUNCTIONS ---------------------------------+
-def score_response(actual_prompt):
-    llm = OpenAI(temperature=0.9)
-    time.sleep(21)
-    response = llm(actual_prompt + score_prompt)
-    
-    resp = re.sub(r'[^a-zA-Z]', '', response)
+def score_response(response):
 
-    if(resp == 'MISLEADING' or resp == 'misleading'):
+    if('MISLEADING' in response or 'misleading' in response):
         return -1
-    elif(resp == 'NOTMISLEADING' or resp == 'notmisleading'):
+    elif('NOT MISLEADING' in response or 'not misleading' in response):
         return 1
     
     return 0
 
 def add_details_source(source_name,source_type,response):
-    time_stamp = datetime.datetime.now()
+    time_stamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     score = score_response(response)
     #Define the data for the new row
     new_row_data = [str(time_stamp),source_name,source_type,response,score]

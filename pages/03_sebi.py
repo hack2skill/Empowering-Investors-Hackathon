@@ -2,38 +2,19 @@
 #--- IMPORT DEPENDENCIES -------------------------------+
 import sys
 import streamlit as st
+
 # setting path
-sys.path.append('../apikey')
 sys.path.append('../prompts')
 sys.path.append('../source_reliability_score')
 sys.path.append('../utils')
 
-from apikey import apikey
+
 from source_reliability_score import *
 from prompts import *
 from utils import *
-
-from langchain.llms import OpenAI
-import os
-import re
-import openai
-from transformers import pipeline  # Import pipeline from transformers
-from langchain.agents import load_tools
-from pydub import AudioSegment
-from moviepy.editor import VideoFileClip
 from streamlit_option_menu import option_menu
-from streamlit_player import st_player
-from langchain.tools import YouTubeSearchTool
-import requests
-from bs4 import BeautifulSoup
- 
-# st.set_page_config(
-#     page_title="Smart With Sebi - SEBI",
-#     page_icon=":detective:",
-#     layout="wide",
-# )
-os.environ["OPENAI_API_KEY"] = apikey
-openai.api_key = apikey
+
+
 
 # --- TITLE --------------------------------------------+
 with st.columns(3)[1]:

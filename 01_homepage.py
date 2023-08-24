@@ -1,6 +1,5 @@
 # Import necessary libraries
 import streamlit as st
-from apikey import apikey
 from streamlit_player import st_player
 
 st.set_page_config(
@@ -15,7 +14,6 @@ with st.columns(3)[1]:
 st.markdown("<h2 style='text-align: center; color: black;'>Welcome to Smart with SEBI portal</h1>", unsafe_allow_html=True)
 
 st.markdown("<h3 style='text-align: left; color: black;'><hr> About this project:</h3>", unsafe_allow_html=True)
-# st.markdown("<h2 style='text-align: center; color: black;'>Welcome to Smart with SEBI portal</h1>", unsafe_allow_html=True)
 
 st.sidebar.success("Select a page above!")
 
