@@ -9,18 +9,21 @@
 
 ## README.md must consist of the following information:
 
-#### Team Name -
-#### Problem Statement - 
-#### Team Leader Email -
+#### Team Name - ForeverYoung
+#### Problem Statement - Identifying Misleading Claims
+#### Team Leader Email - swasthikadevadiga2@gmail.com
 
 ## A Brief of the Prototype:
   This section must include UML Diagrams and prototype description
   
 ## Tech Stack: 
-   List Down all technologies used to Build the prototype
+   Python - ML Models
+   Django Framework
+   HTML CSS JS JQUERY
+   SQLite3
    
 ## Step-by-Step Code Execution Instructions:
-  This Section must contain a set of instructions required to clone and run the prototype so that it can be tested and deeply analyzed
+  Please check the video attached. 
   
 ## What I Learned:
-   Write about the biggest learning you had while developing the prototype
+   I gained a heightened awareness of the importance of responsible content creation and the pivotal role that technology plays in promoting transparency and accountability in the realm of financial advice.
