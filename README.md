@@ -27,17 +27,26 @@
         Certain financial keywords: invest, returns are extracted and then based on these key words, videos from YouTube are suggested to the user.
 
   4. **MOST IMPORTANT FEATURES for SEBI Personnel:** 
-  
-        4.1. Based on the input claim, certain rules and regulations are also suggested based upon mapping from the financial concept to the SEBI rules and regulations database.
-        4.2. A source reliability rating database in the form of Google Sheets is connected to the app so that whenever any claim is being judged, it is pushed to tha database (Google Sheet) and a score is marked for each claim type: -1 for MISLEADING and +1 for NOT MISLEADING, based on the cumulative scores a ranking is assigned and displayed.
+
+      4.1. Based on the input claim, certain rules and regulations are also suggested based upon mapping from the financial concept to the SEBI rules and regulations database.
+
+      4.2. A source reliability rating database in the form of Google Sheets is connected to the app so that whenever any claim is being judged, it is pushed to tha database (Google Sheet) and a score is marked for each claim type: -1 for MISLEADING and +1 for NOT MISLEADING, based on the cumulative scores a ranking is assigned and displayed.
 
 
   
 ## Tech Stack: 
-   List Down all technologies used to Build the prototype
+   Following technologies were used:
+      1. Streamlit - for web-development
+      2. HuggingFace - for sentiment analysis pipeline
+      3. LangChain - For accessing OpenAI 
+      4. PyTesseract - for Optical Character Recognition
+      5. pydub - for audio segmentation
+      6. moviePy - for detaching audio from video
+      7. GoogleSheets - for backend database
    
 ## Step-by-Step Code Execution Instructions:
-  This Section must contain a set of instructions required to clone and run the prototype so that it can be tested and deeply analyzed
+  1. clone the repository:
+      
   
 ## What I Learned:
    Write about the biggest learning you had while developing the prototype
