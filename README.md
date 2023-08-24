@@ -59,6 +59,9 @@
   3. Open a new python terminal
   4. Run the command:
       ```
+      pip install -r requirements.txt
+      ```
+      ```
       streamlit run 01_homepage.py
       ```
   5. Explore the app
