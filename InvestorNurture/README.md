@@ -88,4 +88,5 @@ pip install -r requirements.txt
 -> To deactivate the virtual environment, run: deactivate.
 
 What I Learned:
+
 During the development of the InvestorNurture prototype, my most significant learning was the practical integration of data science techniques with web development. Understanding how to seamlessly combine backend Python coding with frontend HTML and CSS allowed me to create an interactive and user-friendly platform. The integration of Pandas for data processing, Flask for web routing, and Matplotlib for visualization provided me insights into bridging the gap between data analysis and user experience. This experience deepened my comprehension of how diverse technologies can collaborate to deliver a cohesive and functional solution, enriching my skill set for future projects.
