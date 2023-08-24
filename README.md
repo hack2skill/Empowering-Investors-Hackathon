@@ -14,15 +14,18 @@ The Prototype is disected into 3 parts
 <img width="550" height="330" alt="End2End" src="https://github.com/KGSSV/SEBI/blob/main/assets/MicrosoftTeams-image%20(11).png">
 
 #### 2. The Analysis : Here the user gets the consolidated / processed knowledge of various metrics such as : Category , Confidence Score , List of Descriptives , Missing Context
-<img width="550" height="330" alt="End2End" src="https://github.com/KGSSV/SEBI/blob/main/MicrosoftTeams-image%20(11).png">
+<img width="550" height="330" alt="End2End" src="https://github.com/KGSSV/SEBI/blob/main/assets/MicrosoftTeams-image%20(12).png">
 
 #### 3. Document Refrenced : Here the documents will be fetched to support claims.
-<img width="550" height="330" alt="End2End" src="https://github.com/KGSSV/SEBI/blob/main/MicrosoftTeams-image%20(11).png">
+<img width="550" height="330" alt="End2End" src="https://github.com/KGSSV/SEBI/blob/main/assets/MicrosoftTeams-image%20(13).png">
 
 #### 4. Q&A : Here the users can query against each and every SEBI Guideline document
-<img width="550" height="330" alt="End2End" src="https://github.com/KGSSV/SEBI/blob/main/MicrosoftTeams-image%20(11).png">
+<img width="550" height="330" alt="End2End" src="https://github.com/KGSSV/SEBI/blob/main/assets/MicrosoftTeams-image%20(14).png">
+
+<img width="550" height="330" alt="End2End" src="https://github.com/KGSSV/SEBI/blob/main/assets/MicrosoftTeams-image%20(15).png">
 
  
+
 ## Tech Stack: 
 
 #### HTML, CSS & Angular (UI Playground)
