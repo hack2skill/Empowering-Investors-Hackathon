@@ -59,6 +59,11 @@ This would open up a web interface where you can provide the URL of the youtube 
 While developing a machine learning system to spot fraudulent financial claims, we learned a lot about the world of financial fraud. We understood how important it is to have good and diverse data to make the model strong. We also figured out that we need to carefully pick features, including both usual financial signs and new behavior patterns. As we kept improving the model, we saw that we need to always watch out for new tricks fraudsters use. Besides the technical stuff, we realized how big a deal it is to be ethical when working with sensitive financial info. We made sure our system is fair and clear in what it does. This whole experience gave us a better handle on how machine learning can be used to help the gullibe public from falling into traps laid down by the greedy segment of the population.
 
 
+## Future Aspects
+We have developed a separate model to convert the general hinglish text to english so that our model can easily work with the data. It has been added in the current codebase but was not shown in the demo video for simplicity. To perform this conversion we are using generative AI capabilities of LunaAI - 7B LLM using python-llama.
+We are also going to implement a stock analaysis model which checks the stocks mentioned in a video for any anomallies in volume, price and validity(i.e. registration under SEBI).
+Currently we have only implemented a model to check for fraudulent claims but as we go forward we are going to add separate analysis models with weighted outputs that will be combined to give a final prediction.
+
 ## Authors
 
 - [Ikshan Bhardwaj](https://github.com/ikshan-Tango/)
