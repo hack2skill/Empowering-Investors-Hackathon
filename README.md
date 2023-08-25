@@ -1,4 +1,4 @@
-Note : new vidoe was updated early this morning, please check. 
+Note : new video was updated early this morning, please check. 
 # Empowering-Investors-Hackathon
 ## README.md must consist of the following information:
 
