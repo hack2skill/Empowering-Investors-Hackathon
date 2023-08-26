@@ -1,0 +1,21 @@
+.arrowBackIcon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+.goBack {
+  position: relative;
+  font-weight: 500;
+}
+.property1frame1000002308 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+  font-family: var(--font-satoshi);
+}

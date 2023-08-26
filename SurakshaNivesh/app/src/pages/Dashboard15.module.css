@@ -1,0 +1,265 @@
+.flatColorIconscalendar {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.date {
+  position: absolute;
+  top: 2.5rem;
+  left: 17.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.dashboardChild,
+.seperator {
+  position: absolute;
+  top: 2.13rem;
+  left: 26.88rem;
+  border-right: 2px solid var(--color-whitesmoke-300);
+  box-sizing: border-box;
+  width: 0.13rem;
+  height: 2.75rem;
+}
+.dashboardChild {
+  top: 2.06rem;
+  left: 50.94rem;
+}
+.icon {
+  width: 0.99rem;
+  height: 0.99rem;
+}
+.icon,
+.searchInPump {
+  position: relative;
+}
+.frameWrapper,
+.iconParent {
+  display: flex;
+  justify-content: flex-start;
+}
+.iconParent {
+  width: 8.19rem;
+  height: 1rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.49rem;
+}
+.frameWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-9xl);
+  background-color: var(--color-white);
+  box-shadow: 0 7px 21px rgba(0, 0, 0, 0.04);
+  width: 19.69rem;
+  flex-direction: column;
+  padding: var(--padding-mini) var(--padding-base);
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+.notification,
+.notificationChild {
+  position: absolute;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.notificationChild {
+  top: 0;
+  border-radius: var(--br-18xl);
+  border: 1px dashed var(--color-darkgray-200);
+  box-sizing: border-box;
+}
+.notification {
+  top: 0.19rem;
+}
+.vectorIcon {
+  position: absolute;
+  height: 39.53%;
+  width: 34.15%;
+  top: 32.56%;
+  right: 34.15%;
+  bottom: 27.91%;
+  left: 31.71%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 1.69rem;
+  border-radius: 30.21px;
+  background-color: var(--color-salmon-100);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-10xs) var(--padding-8xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.notificationParent {
+  position: absolute;
+  top: 0.06rem;
+  left: 22.13rem;
+  width: 2.56rem;
+  height: 2.69rem;
+  font-size: var(--font-size-7xs);
+  color: var(--color-white);
+  font-family: var(--font-satoshi);
+}
+.frameParent {
+  position: absolute;
+  top: 2rem;
+  left: 52.13rem;
+  width: 24.69rem;
+  height: 2.88rem;
+  font-size: 0.66rem;
+  color: var(--color-darkgray-300);
+  font-family: var(--font-lexend);
+}
+.antDesignalertFilledIcon {
+  position: relative;
+  border-radius: 17.73px;
+  width: 1.75rem;
+  height: 1.75rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.newScammers,
+.p {
+  margin: 0;
+}
+.p {
+  font-size: var(--font-size-3xs);
+  color: var(--color-darkgray-200);
+}
+.antDesignalertFilledParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-mid);
+  background-color: var(--color-white);
+  box-shadow: var(--card);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-sm);
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.frameChild {
+  position: relative;
+  width: 1.25rem;
+  height: 0.62rem;
+}
+.groupWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 35.71px;
+  background-color: var(--color-crimson);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-smi) 0.49rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.groupChild,
+.groupItem {
+  position: absolute;
+  top: 0;
+  left: 2.81rem;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.groupItem {
+  left: 5.63rem;
+}
+.notificationItem {
+  border-radius: 41.63px;
+  border: 1.1px dashed var(--color-darkgray-200);
+  box-sizing: border-box;
+}
+.notification1,
+.notificationItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.div {
+  position: absolute;
+  top: 0.13rem;
+  left: 0.69rem;
+  font-weight: 500;
+}
+.notificationGroup {
+  position: absolute;
+  top: 0;
+  left: 8.44rem;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.frameContainer {
+  position: absolute;
+  top: 0.5rem;
+  left: 11.13rem;
+  width: 10.69rem;
+  height: 2.25rem;
+  text-align: center;
+  font-size: var(--font-size-3xl-4);
+  color: var(--color-darkgray-200);
+}
+.frameGroup {
+  position: absolute;
+  top: 1.81rem;
+  left: 28.06rem;
+  width: 21.81rem;
+  height: 3.31rem;
+  font-size: var(--font-size-sm);
+}
+.traderCallAnd {
+  position: absolute;
+  top: 8.63rem;
+  left: calc(50% - 119px);
+  font-size: var(--font-size-3xl);
+}
+.traderCallAnd1 {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  width: 58.13rem;
+  flex-shrink: 0;
+}
+.traderCallAndInvestmentTipWrapper {
+  position: absolute;
+  top: 11.5rem;
+  left: 16.81rem;
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-gray-300);
+}
+.dashboard {
+  position: relative;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-whitesmoke-100);
+  width: 100%;
+  height: 52rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-darkslategray-300);
+  font-family: var(--font-satoshi);
+}

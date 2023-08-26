@@ -1,0 +1,59 @@
+.vectorIcon {
+  position: relative;
+  width: 30.7px;
+  height: 35.08px;
+}
+.vectorWrapper {
+  position: absolute;
+  top: 23px;
+  left: 14px;
+  border-radius: 55.55px;
+  border: 1.5px dashed var(--color-lightcoral);
+  display: flex;
+  flex-direction: row;
+  padding: 10.602556228637695px 13.15680980682373px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.fraudTradingCall {
+  position: absolute;
+  top: 21px;
+  left: 88px;
+}
+.detectsUnusualMovement {
+  margin: 0;
+}
+.detectsUnusualMovementContainer {
+  position: absolute;
+  top: 47px;
+  left: 88px;
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: var(--color-gray-300);
+}
+.vectorIcon1 {
+  position: absolute;
+  height: 16.81%;
+  width: 3.06%;
+  top: 41.82%;
+  right: 5.52%;
+  bottom: 41.38%;
+  left: 91.42%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  opacity: 0.5;
+}
+.property1frame148 {
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  box-shadow: var(--white-card);
+  width: 408px;
+  height: 110px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-darkslategray-200);
+  font-family: var(--font-satoshi);
+}

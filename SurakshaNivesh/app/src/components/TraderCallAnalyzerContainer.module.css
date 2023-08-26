@@ -1,0 +1,252 @@
+.individualCallAnalyzer {
+  position: absolute;
+  top: 1.31rem;
+  left: calc(50% - 130px);
+  font-weight: 500;
+  color: var(--color-mediumslateblue);
+}
+.relianceInds {
+  color: var(--color-darkslategray-300);
+}
+.stockNameRelianceContainer {
+  position: relative;
+  font-weight: 500;
+}
+.stockNameRelianceIndsParent {
+  position: absolute;
+  top: 4.94rem;
+  left: calc(50% - 410px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-17xl);
+  font-size: var(--font-size-lg);
+  color: var(--color-darkgray-400);
+}
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4.67rem;
+  height: 4.67rem;
+}
+.div {
+  position: relative;
+  font-weight: 600;
+}
+.negativeSignals {
+  position: relative;
+  font-size: var(--font-size-7xs);
+  text-transform: capitalize;
+  font-family: var(--font-satoshi);
+}
+.parent {
+  position: absolute;
+  top: 1.81rem;
+  left: 0.94rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.03rem;
+}
+.groupParent {
+  position: absolute;
+  top: 8.75rem;
+  left: 7.88rem;
+  width: 4.69rem;
+  height: 4.69rem;
+  font-size: 0.47rem;
+  font-family: var(--font-inter);
+}
+.lineAndBarChart {
+  position: absolute;
+  top: 15rem;
+  left: 21.38rem;
+  width: 15.56rem;
+  height: 3.2rem;
+}
+.frameItem {
+  position: relative;
+  background-color: var(--color-forestgreen);
+  width: 0.37rem;
+  height: 0.88rem;
+}
+.rectangleWrapper {
+  height: 1.85rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.frameInner,
+.rectangleDiv {
+  position: relative;
+  background-color: var(--color-forestgreen);
+  width: 0.37rem;
+  height: 0.69rem;
+}
+.rectangleDiv {
+  height: 0.56rem;
+}
+.frameChild1 {
+  height: 0.17rem;
+}
+.frameChild1,
+.frameChild2,
+.frameChild4 {
+  position: relative;
+  background-color: var(--color-forestgreen);
+  width: 0.37rem;
+}
+.frameChild2 {
+  height: 0.01rem;
+}
+.frameChild4 {
+  align-self: stretch;
+}
+.rectangleFrame {
+  height: 0.07rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.frameChild5 {
+  position: relative;
+  background-color: var(--color-forestgreen);
+  width: 0.37rem;
+  height: 0.16rem;
+}
+.rectangleWrapper3 {
+  height: 0.47rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.rectangleWrapper4,
+.rectangleWrapper5,
+.rectangleWrapper7,
+.rectangleWrapper8 {
+  height: 0.72rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.rectangleWrapper5,
+.rectangleWrapper7,
+.rectangleWrapper8 {
+  height: 1.09rem;
+}
+.rectangleWrapper7,
+.rectangleWrapper8 {
+  height: 1.24rem;
+}
+.rectangleWrapper8 {
+  height: 1.55rem;
+}
+.rectangleWrapper10,
+.rectangleWrapper12,
+.rectangleWrapper13,
+.rectangleWrapper14 {
+  height: 1.67rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.rectangleWrapper12,
+.rectangleWrapper13,
+.rectangleWrapper14 {
+  height: 1.48rem;
+}
+.rectangleWrapper13,
+.rectangleWrapper14 {
+  height: 1.31rem;
+}
+.rectangleWrapper14 {
+  height: 0.99rem;
+}
+.frameChild20 {
+  position: relative;
+  background-color: var(--color-forestgreen);
+  width: 0.37rem;
+  height: 1.55rem;
+}
+.frameParent {
+  position: absolute;
+  top: 10.84rem;
+  left: 21.25rem;
+  width: 15.56rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.oppositeOiTrend {
+  position: absolute;
+  top: 9.13rem;
+  left: 22.94rem;
+  font-size: 0.83rem;
+  font-weight: 600;
+  font-family: var(--font-inter);
+}
+.span1 {
+  font-size: 1.45rem;
+}
+.fraudCall1 {
+  font-size: var(--font-size-xs);
+}
+.fraudCall {
+  position: absolute;
+  top: 10.56rem;
+  left: 42.5rem;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-salmon-200);
+  font-size: var(--font-size-9xl);
+}
+.vectorIcon {
+  width: 0.84rem;
+  height: 0.67rem;
+  display: none;
+}
+.clickHereFor,
+.vectorIcon {
+  position: relative;
+}
+.vectorParent {
+  position: absolute;
+  top: 28.94rem;
+  left: 39.56rem;
+  border-radius: var(--br-4xl);
+  background-color: var(--color-mediumslateblue);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xs) var(--padding-lg);
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-satoshi);
+}
+.component40 {
+  position: absolute;
+  top: 16.63rem;
+  left: 16.94rem;
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  box-shadow: var(--white-card);
+  width: 59.25rem;
+  height: 32.56rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-gray-400);
+  font-family: var(--font-poppins);
+}

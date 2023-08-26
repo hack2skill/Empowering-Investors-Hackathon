@@ -1,0 +1,70 @@
+.enterInfluencersTwitter {
+  position: relative;
+}
+.enterInfluencersTwitterHanParent,
+.enterInstagramUrlParent,
+.enterTelegramUrlParent,
+.enterYoutubeUrlParent {
+  position: absolute;
+  top: 2.69rem;
+  left: 2.88rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.enterInstagramUrlParent,
+.enterTelegramUrlParent,
+.enterYoutubeUrlParent {
+  top: 6.13rem;
+  left: 9.81rem;
+}
+.enterInstagramUrlParent,
+.enterTelegramUrlParent {
+  top: 9.88rem;
+  left: 9rem;
+}
+.enterInstagramUrlParent {
+  top: 13.31rem;
+  left: 8.63rem;
+}
+.vectorIcon {
+  position: relative;
+  width: 0.84rem;
+  height: 0.67rem;
+  display: none;
+}
+.vectorParent {
+  position: absolute;
+  top: 18.63rem;
+  left: 32.69rem;
+  border-radius: var(--br-4xl);
+  background-color: var(--color-mediumslateblue);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xs) var(--padding-lg);
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-satoshi);
+}
+.component31 {
+  position: absolute;
+  top: 19.63rem;
+  left: 22.19rem;
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  box-shadow: var(--white-card);
+  width: 40.75rem;
+  height: 22rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}

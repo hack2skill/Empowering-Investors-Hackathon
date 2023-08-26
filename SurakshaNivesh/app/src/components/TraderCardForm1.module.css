@@ -1,0 +1,135 @@
+.vectorIcon {
+  position: relative;
+  width: 3.69rem;
+  height: 3.69rem;
+  z-index: 0;
+}
+.vectorIcon1 {
+  position: absolute;
+  margin: 0 !important;
+  height: 45%;
+  width: 54.3%;
+  top: 30.1%;
+  right: 26.8%;
+  bottom: 24.9%;
+  left: 18.9%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.logostelegram {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.iitianTraderOfficial,
+.logostelegram {
+  position: relative;
+}
+.iitiantraderofficial {
+  position: relative;
+  font-size: var(--font-size-lg);
+}
+.iitianTraderOfficialParent,
+.logostelegramParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.logostelegramParent {
+  position: absolute;
+  top: 4.44rem;
+  left: 1.56rem;
+  flex-direction: row;
+  gap: var(--gap-xs);
+  font-size: var(--font-size-3xl);
+}
+.privateChannel {
+  position: absolute;
+  top: 5.19rem;
+  left: calc(50% + 157px);
+}
+.div,
+.div1,
+.div2,
+.totalCallsShared {
+  position: absolute;
+  top: 9.06rem;
+  left: calc(50% - 226px);
+  font-weight: 500;
+}
+.div,
+.div1,
+.div2 {
+  top: 11.25rem;
+  left: calc(50% + 217px);
+}
+.div1,
+.div2 {
+  top: 13.19rem;
+  left: calc(50% + 213px);
+}
+.div2 {
+  top: 9.06rem;
+  left: calc(50% + 188px);
+}
+.credibilityScoreOut,
+.drawdownProfit,
+.successfulCallsWith {
+  position: absolute;
+  top: 11.25rem;
+  left: calc(50% - 226px);
+  font-weight: 500;
+}
+.credibilityScoreOut,
+.drawdownProfit {
+  top: 13.19rem;
+}
+.credibilityScoreOut {
+  top: 16.44rem;
+  left: calc(50% - 230px);
+  font-size: var(--font-size-5xl);
+  color: var(--color-mediumslateblue);
+}
+.vectorIcon2 {
+  position: relative;
+  width: 0.84rem;
+  height: 0.67rem;
+  display: none;
+}
+.vectorParent {
+  position: absolute;
+  top: 20.63rem;
+  left: 14.13rem;
+  border-radius: var(--br-4xl);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xs) var(--padding-lg);
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-tomato-100);
+}
+.component32 {
+  position: absolute;
+  top: 18.44rem;
+  left: 23.31rem;
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  box-shadow: var(--white-card);
+  width: 40.75rem;
+  height: 24rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-darkslategray-300);
+  font-family: var(--font-satoshi);
+}

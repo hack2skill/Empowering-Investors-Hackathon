@@ -1,0 +1,149 @@
+.vectorIcon {
+  width: 0.84rem;
+  height: 0.67rem;
+  display: none;
+}
+.search,
+.vectorIcon {
+  position: relative;
+}
+.vectorParent {
+  position: absolute;
+  top: 17.19rem;
+  left: 29.44rem;
+  border-radius: var(--br-4xl);
+  background-color: var(--color-mediumslateblue);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xs) var(--padding-lg);
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  cursor: pointer;
+}
+.featuredIcon {
+  position: relative;
+  border-radius: var(--br-9xl);
+  width: 2.88rem;
+  height: 2.88rem;
+}
+.text {
+  position: relative;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+.buttonBase {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.action,
+.button {
+  flex-direction: row;
+  align-items: flex-start;
+}
+.button {
+  display: flex;
+  justify-content: flex-start;
+}
+.action {
+  align-self: stretch;
+  display: none;
+  justify-content: center;
+  font-family: var(--font-inter);
+}
+.uploadIcon {
+  position: relative;
+  width: 0.88rem;
+  height: 0.88rem;
+}
+.clickToUpload {
+  position: relative;
+  font-weight: 500;
+}
+.frameContainer,
+.uploadParent {
+  display: flex;
+  justify-content: flex-start;
+}
+.uploadParent {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-5xs);
+}
+.frameContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gainsboro);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-4xs) var(--padding-sm);
+  align-items: flex-start;
+}
+.frameWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8.25rem;
+  height: 2rem;
+}
+.textAndSupportingTextInner {
+  position: relative;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.09);
+  width: 8.25rem;
+  height: 2rem;
+  cursor: pointer;
+  font-size: var(--font-size-xs);
+  color: var(--color-darkslategray-400);
+}
+.supportingText {
+  align-self: stretch;
+  position: relative;
+  line-height: 1.13rem;
+  color: var(--gray-500);
+  text-align: center;
+}
+.content,
+.fileUploadBase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.content {
+  align-self: stretch;
+  gap: var(--gap-xs);
+}
+.fileUploadBase {
+  position: absolute;
+  top: 5.94rem;
+  left: 4.69rem;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-whitesmoke-200);
+  border: 1px dashed var(--color-gainsboro);
+  box-sizing: border-box;
+  width: 31rem;
+  padding: var(--padding-base) var(--padding-5xl) var(--padding-5xl);
+  text-align: left;
+  font-size: var(--font-size-smi);
+  color: var(--color-gray-400);
+}
+.component31 {
+  position: absolute;
+  top: 17.5rem;
+  left: 24.94rem;
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  box-shadow: var(--white-card);
+  width: 40.75rem;
+  height: 22rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-satoshi);
+}

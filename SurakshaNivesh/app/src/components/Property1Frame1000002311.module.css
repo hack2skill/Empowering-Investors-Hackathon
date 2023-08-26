@@ -1,0 +1,29 @@
+.frameChild {
+  border-radius: 50%;
+  background-color: var(--color-whitesmoke-300);
+  width: 14px;
+  height: 14px;
+}
+.analysingPennyStock,
+.frameChild {
+  position: relative;
+}
+.ellipseParent,
+.property1frame1000002311 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+}
+.property1frame1000002311 {
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-lg);
+  opacity: 0;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-darkgray-100);
+  font-family: var(--font-poppins);
+}

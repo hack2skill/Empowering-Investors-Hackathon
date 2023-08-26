@@ -1,0 +1,115 @@
+.span {
+  background: linear-gradient(180deg, #c714d0, #432de9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.suraksha {
+  position: relative;
+  font-weight: 500;
+}
+.logo {
+  position: absolute;
+  top: 3.44rem;
+  left: calc(50% - 56px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--color-darkslategray-300);
+}
+.sidebarChild {
+  position: absolute;
+  top: 1.13rem;
+  left: 1.13rem;
+  width: 2.19rem;
+  height: 0.56rem;
+}
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 0.63rem;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.name {
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+}
+.span1 {
+  color: var(--color-darkslategray-100);
+}
+.wrapper {
+  position: absolute;
+  top: 6rem;
+  left: 1.56rem;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-gray-100);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-10xs) var(--padding-7xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: var(--font-size-4xs);
+  color: var(--color-black);
+  font-family: var(--font-lexend);
+}
+.groupParent {
+  position: absolute;
+  top: 7.81rem;
+  left: 4.75rem;
+  width: 5.69rem;
+  height: 7.06rem;
+  font-size: var(--font-size-mini);
+}
+.groupItem {
+  position: absolute;
+  top: 2.6rem;
+  left: 0.72rem;
+  width: 8.2rem;
+  height: 5.02rem;
+}
+.readyToHelp {
+  margin: 0;
+}
+.weHave3500Container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.groupContainer {
+  position: absolute;
+  top: 39.5rem;
+  left: 2.69rem;
+  width: 9.81rem;
+  height: 6.91rem;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-satoshi);
+}
+.menu,
+.sidebar {
+  position: absolute;
+  left: 0;
+}
+.menu {
+  top: 18.06rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.sidebar {
+  top: 0;
+  background-color: var(--color-gray-200);
+  box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.03);
+  width: 15.19rem;
+  height: 52rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-space-grotesk);
+}

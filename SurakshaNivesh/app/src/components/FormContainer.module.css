@@ -1,0 +1,57 @@
+.enterUrl {
+  position: relative;
+}
+.enterDateParent,
+.enterUrlParent {
+  position: absolute;
+  top: 7.69rem;
+  left: 8.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.enterDateParent {
+  top: 11.94rem;
+  left: 7.88rem;
+}
+.vectorIcon {
+  position: relative;
+  width: 0.84rem;
+  height: 0.67rem;
+  display: none;
+}
+.vectorParent {
+  position: absolute;
+  top: 17.19rem;
+  left: 28.94rem;
+  border-radius: var(--br-4xl);
+  background-color: var(--color-mediumslateblue);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xs) var(--padding-lg);
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-satoshi);
+}
+.component31 {
+  position: absolute;
+  top: 20.75rem;
+  left: 24.94rem;
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  box-shadow: var(--white-card);
+  width: 40.75rem;
+  height: 22rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
